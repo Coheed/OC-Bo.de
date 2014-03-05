@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="<?php echo $this->language; ?>">
+<head>
+    <meta charset="<?php echo $this->charset; ?>">
+    <title><?php echo $this->pageTitle; ?> - <?php echo $this->mainTitle; ?></title>
+    <base href="<?php echo $this->base; ?>">
+    <meta name="robots" content="<?php echo $this->robots; ?>">
+    <meta name="description" content="<?php echo $this->description; ?>">
+    <meta name="keywords" content="<?php echo $this->keywords; ?>">
+    <meta name="generator" content="<?php echo $this->pageTitle; ?>">
+    <?php echo $this->viewport; ?>
+    <?php echo $this->framework; ?>
+    <?php echo $this->stylesheets; ?>
+    <?php echo $this->mooScripts; ?>
+    <?php echo $this->head; ?>
+    <script type="text/javascript">
+        var PageId = <?php echo json_encode($objPage->id) ?>;
+    </script>
+    <!--[if lt IE 9]>
+    <script src="<?php echo TL_ASSETS_URL; ?>assets/html5shiv/<?php echo HTML5SHIV; ?>/html5shiv.js"></script>
+    <![endif]-->
+    <!--  <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/478ecbb8-37aa-42ba-ac4a-7fa3550d063e.css"/> -->
+    <meta content='width=device-width,minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
+    <script async src="/files/oc/js/main.js"></script>
+    <link type="text/css" rel="stylesheet" href="/files/oc/textillate/animate.css"/>
+    <script type="text/javascript" src="/files/oc/js/greyScale.min.js"></script>
+    <script type="text/javascript" src="/files/oc/js/jquery.cookie.js"></script>
+</head>
+<body id="top"
+      class="{{ua::class}}<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>"<?php if ($this->onload): ?> onload="<?php echo $this->onload; ?>"<?php endif; ?>>
+<div id="wrapper" class="page">
+    <!-- <?php if ($this->header): ?> //todo ifabfrage für leere header -->
+    <div id="container">
+        <div class="row">
+            <header id="header" class="header col">
+                <div class="inside">
+                    <?php echo $this->header; ?>
+                    {{file::mainNavi.php}}
+                    {{file::subNavi.php}}
+                </div>
+            </header>
+        </div>
+    </div>
+    <!-- <?php endif; ?> -->
+    <?php if ($objPage->id != 5): ?>
+        {{insert_module:21}}
+        {{file::imageholder_sub.php}}
+        <?php if ($objPage->id = 12): ?>
+            {{insert_module:21}}
+        <?php else: ?>
+            {{insert_module:21}}
+        <?php endif; ?>
+    <?php else: ?>
+        {{insert_module::11}}
+    <?php endif; ?>
+    <div id="container">
+        <div class="row">
+            <div id="main">
+                <div class="inside main_content ">
+                    <?php echo $this->main; ?>
+                </div>
+                <?php echo $this->getCustomSections('main'); ?>
+            </div>
+        </div>
+        <?php if ($this->left): ?>
+            <aside id="left">
+                <div class="inside">
+                    <?php echo $this->left; ?>
+                </div>
+            </aside>
+        <?php endif; ?>
+        <?php if ($this->right): ?>
+            <aside id="right">
+                <div class="inside">
+                    <?php echo $this->right; ?>
+                </div>
+            </aside>
+        <?php endif; ?>
+        <?php if ($objPage->id == 5): ?>
+            {{insert_module::12}}
+        <?php endif; ?>
+    </div>
+    {{file::bigFooter.php}}
+</div>
+<?php echo $this->mootools; ?>
+<?php if (!$this->disableCron): ?>
+    <script>
+        <?php if ($this->layout->addJQuery): ?>
+        setTimeout(function () {
+            jQuery.ajax("system/cron/cron.txt", {complete: function (e) {
+                var t = e.responseText || 0;
+                parseInt(t) < Math.round(+(new Date) / 1e3) -<?php echo $this->cronTimeout; ?> && jQuery.ajax("system/cron/cron.php")
+            }})
+        }, 5e3)
+        <?php else: ?>
+        setTimeout(function () {
+            (new Request({url: "system/cron/cron.txt", onComplete: function (e) {
+                e || (e = 0), parseInt(e) < Math.round(+(new Date) / 1e3) -<?php echo $this->cronTimeout; ?> && (new Request({url: "system/cron/cron.php"})).get()
+            }})).get()
+        }, 5e3);
+        <?php endif; ?>
+    </script>
+<?php endif; ?>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-43837708-1', 'oralchirurgie-bochum.de');
+    ga('send', 'pageview');
+</script>
+<script>
+    jQuery(function () {
+        // fade in the grayscaled images to avoid visual jump
+        jQuery('.greyscale').hide().fadeIn(500);
+    });
+    // user window.load to ensure images have been loaded
+    jQuery(window).load(function () {
+        jQuery('.greyscale').greyScale({
+            // call the plugin with non-defult fadeTime (default: 400ms)
+            fadeTime: 500,
+            reverse: false
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	/* <![CDATA[ */
+	window.addEvent('domready', function() {
+		new CSlide($('cslide_<?php print $this->id; ?>'), {
+			duration: <?php print $this->duration; ?>,
+			transition: Fx.Transitions.<?php print $this->cslide_transition; ?>.<?php print $this->cslide_transition_mode; ?> ,
+			autoplay: <?php print $this->addAutoplay ? 'true' : 'false'; ?>,
+			autoplayRandom: <?php print $this->autoplayRandom ? 'true' : 'false'; ?>,
+			slideLeft: '<?php print $this->slideLeft; ?>',
+			slideRight: '<?php print $this->slideRight; ?>',
+			delay: <?php print $this->addAutoplay ? $this->delay : 0; ?>,
+			addNavigation: <?php print $this->addNavigation ? 'true' : 'false'; ?>,
+			addIndicator: <?php print $this->addIndicator ? 'true' : 'false'; ?> ,
+            width: '<?php print $this->arrSize[0]; ?>',
+            height: '<?php print $this->arrSize[1]; ?>' 			
+		});
+	});
+	/* ]]> */
+</script>
+<div id="cslide_<?php print $this->id; ?>" class="cslide">
+	
+	<div id="cslide_nav_left_<?php print $this->id; ?>" class="cslide_nav_left"></div>
+	<div id="cslide_nav_right_<?php print $this->id; ?>" class="cslide_nav_right"></div>
+	<div class="cslide_container" id="cslide_container_<?php print $this->id; ?>">
+		<div class="cslide_elem">
+	

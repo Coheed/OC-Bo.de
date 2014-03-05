@@ -1,0 +1,46 @@
+<script type="text/javascript">
+	/* <![CDATA[ */
+	window.addEvent('domready', function() {
+		new CSlide($('cslide_<?php print $this->id; ?>'), {
+			duration: <?php print $this->duration; ?>,
+			transition: Fx.Transitions.<?php print $this->cslide_transition; ?>.<?php print $this->cslide_transition_mode; ?> ,
+			autoplay: <?php print $this->addAutoplay ? 'true' : 'false'; ?>,
+			autoplayRandom: <?php print $this->autoplayRandom ? 'true' : 'false'; ?>,
+			slideLeft: '<?php print $this->slideLeft; ?>',
+			slideRight: '<?php print $this->slideRight; ?>',
+			delay: <?php print $this->addAutoplay ? $this->delay : 0; ?>,
+			addNavigation: <?php print $this->addNavigation ? 'true' : 'false'; ?>,
+			addIndicator: <?php print $this->addIndicator ? 'true' : 'false'; ?> ,
+			width: '<?php print $this->arrSize[0]; ?>',
+			height: '<?php print $this->arrSize[1]; ?>'			
+		});
+	});
+	/* ]]> */
+</script>
+<div id="cslide_<?php print $this->id; ?>" class="cslide">
+
+    <div class="cslideNaviWrapper">
+        <div id="cslide_nav_left_<?php print $this->id; ?>" class="cslide_nav_left">
+            <svg class="cslideNavSvg">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="6.004 4.756 4.242 7.487" enable-background="new 6.004 4.756 4.242 7.487"
+                     xml:space="preserve">
+<path d="M7.209,8.5L10.1,5.609c0.195-0.195,0.195-0.512,0-0.707c-0.195-0.195-0.512-0.195-0.707,0L6.15,8.145
+	C6.052,8.243,6.004,8.371,6.004,8.5S6.052,8.757,6.15,8.855l3.243,3.242c0.195,0.194,0.512,0.194,0.707,0
+	c0.195-0.195,0.195-0.513,0-0.707L7.209,8.5z"/>
+</svg>
+            </svg>
+        </div>
+        <div id="cslide_nav_right_<?php print $this->id; ?>" class="cslide_nav_right">
+            <svg class="cslideNavSvg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="6.004 4.756 4.242 7.487" enable-background="new 6.004 4.756 4.242 7.487"
+                 xml:space="preserve">
+<path d="M6.15,11.391c-0.195,0.194-0.195,0.512,0,0.707c0.195,0.194,0.512,0.194,0.707,0L10.1,8.855
+	c0.099-0.099,0.146-0.227,0.146-0.355S10.198,8.243,10.1,8.145L6.857,4.902c-0.195-0.195-0.512-0.195-0.707,0
+	c-0.195,0.195-0.195,0.512,0,0.707L9.041,8.5L6.15,11.391z"/>
+</svg>
+
+        </div></div>
+	<div class="cslide_container" id="cslide_container_<?php print $this->id; ?>">
+		<div class="cslide_elem">
+	

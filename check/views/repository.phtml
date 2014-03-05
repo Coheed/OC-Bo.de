@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contao Check <?php echo CONTAO_CHECK_VERSION ?></title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="wrapper">
+  <h1>Contao Check <?php echo CONTAO_CHECK_VERSION ?></h1>
+  <div class="row">
+    <h2><?php echo _('Extension Repository') ?></h2>
+  </div>
+  <div class="row">
+    <h3><?php echo _('PHP SOAP extension') ?></h3>
+    <?php if ($this->hasSoap()): ?>
+      <p class="confirm"><?php echo _('The PHP SOAP extension is available.') ?></p>
+    <?php else: ?>
+      <p class="error"><?php echo _('The PHP SOAP extension is not available.') ?></p>
+      <p class="explain"><?php printf(_('The PHP SOAP extension is required to communicate with the Extension Repository server. You can enable it by compiling PHP with the --enable-soap flag. Depending on your Contao version, you might also be able to use the %s extension.'), '<a href="https://contao.org/extension-list/view/nusoap.html">Nusoap</a>') ?></p>
+    <?php endif; ?>
+  </div>
+  <div class="row">
+    <h3><?php echo _('Connection test') ?></h3>
+    <?php if ($this->canConnect()): ?>
+      <p class="confirm"><?php echo _('A connection to contao.org could be established.') ?></p>
+    <?php else: ?>
+      <p class="error"><?php echo _('A connection to contao.org could not be established.') ?></p>
+      <p class="explain"><?php echo _('Maybe the request has been blocked by a firewall. Please contact your server administrator.') ?></p>
+    <?php endif; ?>
+  </div>
+  <div class="row">
+    <?php if ($this->isAvailable()): ?>
+	  <p class="confirm large"><?php echo _('You can use the Extension Repository on this server.') ?></p>
+	<?php else: ?>
+	  <p class="error large"><?php echo _('You cannot use the Extension Repository on this server.') ?></p>
+	<?php endif; ?>
+  </div>
+  <p class="back"><a href="./"><?php echo _('Go back') ?></a></p>
+</div>
+</body>
+</html>

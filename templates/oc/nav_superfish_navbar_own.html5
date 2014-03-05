@@ -1,0 +1,54 @@
+<?php
+echo PHP_EOL . '<div class="sf-menu sf-navbar ' . $this->level .'">' . PHP_EOL;
+foreach ($this->items as $item) {
+//check for variables
+    if ($item['class']) {
+        if (strstr($item['class'], 'trail')) { //begin: Is part of trail?
+            $navItemClass = ' class="' . $item['class'] . ' current" ';
+        }else{ // is not part of trail
+            $navItemClass = ' class="' . $item['class'] . '" ';
+        }//end part of trail check
+        $navItemClassCurrent = ' class="' . $item['class'] . ' current" ';
+    } else { unset($navItemClass); }
+    if ($item['pageTitle'] != "") {
+        $navItemTitle = ' title="' . $item['pageTitle'] . '" ';
+    }else {
+        $navItemTitle = ' title="' . $item['title'] . '" ';
+    }
+    if ($item['accesskey']) {
+        $navAccessKey = ' accesskey="' . $item['accesskey'] . '" ';
+    }
+    if ($item['nofollow']) {
+        $navNoFollow = ' rel="nofollow" ';
+    }
+
+//output
+    if ($item['isActive']) {
+
+        $later = '<div ' . $navItemClassCurrent .' >'
+            .'<a ' . $navItemClassCurrent .'>' . $item['link'] . '</a>'
+            . $item['subitems']
+            . PHP_EOL
+            . '</div>'
+            . PHP_EOL;
+    } else {
+        echo '<div ' . $navItemClass . '>'
+            .'<a '
+            . $navItemClass
+            .'href="' . $item['href'] . '" '
+            . $navItemTitle
+            . $navAccessKey
+            . $navTabIndex
+            . 'onclick="this.blur();' . $item['target']
+            . '">'
+            . $item['link']
+            . '</a>'
+            . $item['subitems']
+            . PHP_EOL
+            . '</div>'
+            . PHP_EOL;
+    }
+}
+echo "</div>";
+echo $later;
+?>

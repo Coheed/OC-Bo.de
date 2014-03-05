@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contao Check <?php echo CONTAO_CHECK_VERSION ?></title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="wrapper">
+  <h1>Contao Check <?php echo CONTAO_CHECK_VERSION ?></h1>
+  <div class="row">
+    <h2><?php echo _('Overview') ?></h2>
+  </div>
+  <div class="row">
+    <h3>PHP <?php echo phpversion() ?></h3>
+    <ul>
+      <?php if ($this->supportsContao2()): ?>
+        <li class="confirm"><?php echo _('You can install Contao 2.x') ?></li>
+      <?php else: ?>
+        <li class="error"><?php printf(_('You cannot install Contao 2.x (requires PHP %s+)'), $this->getContao2Version()) ?></li>
+      <?php endif; ?>
+      <?php if ($this->supportsContao3()): ?>
+        <li class="confirm"><?php echo _('You can install Contao 3.x') ?></li>
+      <?php else: ?>
+        <li class="error"><?php printf(_('You cannot install Contao 3.x (requires PHP %s+)'), $this->getContao3Version()) ?></li>
+      <?php endif; ?>
+    </ul>
+  </div>
+  <div class="row">
+    <h3><?php echo _('Requirements') ?></h3>
+    <ul>
+      <?php if ($this->canUseRepository()): ?>
+        <li class="confirm"><?php echo _('You can use the Extension Repository.') ?> <a href="./?c=repository"><?php echo _('More information …') ?></a></li>
+      <?php else: ?>
+        <li class="error"><?php echo _('You cannot use the Extension Repository.') ?> <a href="./?c=repository"><?php echo _('More information …') ?></a></li>
+      <?php endif; ?>
+      <?php if ($this->canUseLiveUpdate()): ?>
+        <li class="confirm"><?php echo _('You can use the Live Update.') ?> <a href="./?c=live-update"><?php echo _('More information …') ?></a></li>
+      <?php else: ?>
+        <li class="error"><?php echo _('You cannot use the Live Update.') ?> <a href="./?c=live-update"><?php echo _('More information …') ?></a></li>
+      <?php endif; ?>
+      <?php if ($this->requiresSafeModeHack()): ?>
+        <li class="confirm"><?php echo _('You do not need the Safe Mode Hack.') ?> <a href="./?c=safe-mode-hack"><?php echo _('More information …') ?></a></li>
+      <?php else: ?>
+        <li class="error"><?php echo _('You do need the Safe Mode Hack.') ?> <a href="./?c=safe-mode-hack"><?php echo _('More information …') ?></a></li>
+      <?php endif; ?>
+    </ul>
+  </div>
+  <div class="row">
+    <p class="mt"><a href="./?c=installer" class="button orange"><?php echo _('Install Contao') ?></a> <a href="./?c=validator" class="button"><?php echo _('Validate an existing installation') ?></a></p>
+  </div>
+</div>
+</body>
+</html>
