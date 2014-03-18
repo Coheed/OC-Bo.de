@@ -14,7 +14,6 @@ nbproject/
 /.htaccess
 /*.xml
 contao/update.phar.php
-files/*
 assets/css/*
 assets/images/*
 assets/js/*
