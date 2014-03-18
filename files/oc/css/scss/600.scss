@@ -1,0 +1,523 @@
+@media screen and (min-width: 321px) and (max-width: 768px) { //todo erstes mobil
+  #rButton,#bubble{display:none;}
+
+    a#NavLink{
+    /*  background: url("/files/oc/images/mmenu.png") no-repeat scroll center center;
+      background-size: 100% 100%;
+      height: 40px;
+      width: 40px;
+      text-indent: -999px;
+      float:right;
+      margin: 2%;
+     */
+      background: url("/files/oc/images/mmenu.png") no-repeat scroll center center;
+      background-size: 93%;
+      height: 70px;
+      width: 15%;
+      text-indent: -999px;
+      float:right;
+      margin-top: 42px;
+      margin-right:5%;
+    }
+    #mainNavi {
+      display:none;
+      padding-top: 66px;
+      float: right;
+      font-size: 21px;
+      margin-right:25px;
+      div {
+        float: left;
+        margin-left: 20px;
+      }
+    }
+    #subNavi {
+      display:none;
+      height: 80px;
+      width: 100%;
+      float: right;
+      font-size: 19px;
+      background: #0064AE;
+      padding-right: 25px;
+      margin-top: 25px;
+      .subLink {
+        opacity: 0;
+      }
+      a {
+        color: white;
+        float: left;
+      }
+      div {
+        border: white 1px solid;
+        padding: 5px 17px 5px 17px;
+        float: right;
+        margin-left: 20px;
+        margin-top: 18px;
+      }
+    }
+  /* --- caroufredsel --- */
+    div#impressionen.ce_caroufredsel_start {
+      margin: 0 !important;
+      padding: 0 !important;
+      div.caroufredsel_wrapper {
+        img {
+          display: block;
+          margin: 0 auto;
+          float: left;
+        }
+      }
+    }
+    .carouWrapper {
+      width: 100%;
+      a {
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        float: left;
+      }
+    }
+    .carouCenter {
+      background: #0064AE;
+      max-width: 1680px;
+      margin: 0 auto;
+    }
+    .carouCenter a:nth-of-type(2) {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+    }
+    .caroufredsel_pagi a {
+      //todo HOVER
+      background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll rgba(0, 0, 0, 0);
+      //   background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll -2px -32px rgba(0, 0, 0, 0);
+      display: inline-block;
+      height: 30px;
+      margin: 7px 5px 0 0;
+      overflow: hidden;
+      text-decoration: none;
+      text-indent: -999px;
+      width: 30px;
+    }
+    .caroufredsel_pagi a.selected {
+      //todo hover active
+      background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll rgba(0, 0, 0, 0);
+    }
+    div.mod_caroufredsel.block {
+      // Overflow hidden für den social bereich
+      overflow: hidden !important;
+    }
+    .caroufredsel_controls {
+      position: relative;
+      float: left;
+      left: 50%;
+      .caroufredsel_navi {
+        padding: 90px 0;
+        position: relative;
+        float: left;
+        left: -50%;
+        img {
+          display: block;
+        }
+        .caroufredsel_pagi {
+          float: left;
+        }
+        .caroufredsel_next {
+          margin-left: 80px;
+          float: left;
+        }
+        .caroufredsel_prev {
+          margin-right: 80px;
+          float: left;
+        }
+      }
+    }
+  /* --- caroufredsel --- */
+  /* ---|Display Static Aktivierungen|--- */
+  /* --- DISABLES --- */
+    .ansehen,
+    .up {
+      display: block;
+    }
+
+
+    #bigFooter {
+      h3 {
+        //font-family: "RotisIISansW01-ExtraLt";c
+        font-size: 42pt;
+        text-align: center;
+        font-weight: 100;
+        color: #0064AE;
+        margin-top: 60px;
+
+      }
+      #social {
+        height: 785px;
+        background: url("/files/oc/images/socialBg.jpg") no-repeat;
+        background-size: 100% auto;
+        h1 {
+          text-transform: uppercase;
+          text-align: center;
+          color: #0064AE;
+          font-weight: bolder;
+          font-size: 50px;
+          padding-top: 11px;
+        }
+        p {
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: -20px;
+          a, a:active, a:visited {
+            color: #808080;
+            display:block;
+            font-size: 30px;
+            margin-top:10px;
+          }
+        }
+        #copyright {
+          padding-top: 30px;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 19px;
+          color: #808080;
+        }
+      }
+      #blueFooter {
+        background: #0064AE ;
+        height: 340px;
+        text-transform: uppercase;
+        .left {
+          padding-top:30px;
+          margin: 0 auto;
+          width:200px;
+        }
+        .right {
+          margin: 0 auto;
+          width:200px;
+        }
+        a, a:active, a:visited {
+          color: white;
+          display:block;
+          margin: 0 5px;
+          font-size: 30px;
+          text-align: center;
+        }
+        a:after {
+          //content: '\0000a0\ \0000a0\ .';
+          //leerzeichen escaped
+        }
+        a:last-child:after {
+          //entfernen des Punktes bei den letzten link !!!
+          content: " ";
+          //Leerzeichen muss drin sein, kein nbps
+        }
+      }
+      clear: both;
+    }
+    figure {
+      margin: 0;
+      padding: 0;
+    }
+  /* --- DISABLES --- */
+  /* ---|2 spalten layout  Rich Text Editor|--- */
+  /*
+  BILD LINKS TEXT RECHTS FERTIG
+  #philosophie.mod_article div.ce_text{
+    height:1600px;
+    float:left;
+  }
+  #philosophie {
+    padding:115px 14% 0;
+    .text{
+      width:500px;//TextBaustein -> Breite
+      float:right;
+      .blueTopic {
+        float: none !important;
+        width:500px;//Headline -> Breite
+      }
+    }
+    .bild{
+      margin:0;
+      padding:0;
+    }
+
+    img{
+      float:left;
+    }
+  }
+  */
+  /* MOD UND CE ALLGEMEINEINTRÄGE GENERELL */
+    .mod_article {
+      .ce_text {
+
+        h1 {
+          color: #0064AE;
+          font-weight: 100;
+        }
+        p {
+
+
+        }
+        .ce_img {
+
+        }
+      }
+    }
+  /* MOD UND CE ALLGEMEINEINTRÄGE GENERELL */
+    .blueTopic {
+      font-size: 29px;
+      float: none !important;
+      width: 520px;
+      color: #0064AE;
+      //Headline -> Breite
+    }
+    #philosophie.mod_article div.ce_text {
+      height: 1600px;
+      float: left;
+    }
+    #philosophie, #praxis {
+      .imglinks {
+        min-height: 350px;
+        .text {
+          width: 520px;
+          //TextBaustein -> Breite
+
+          font-size: 21px;
+
+        }
+        .bild {
+          margin: 0;
+          padding: 0;
+        }
+        img {
+
+        }
+      }
+      .imgrechts {
+        min-height: 350px;
+        .text {
+          //Margin right falls der Text weiter eingerückt werden soll.
+          width: 520px;
+          //TextBaustein -> Breite
+          font-size: 21px;
+          .blueTopic {
+            font-size: 29px;
+            float: none !important;
+            width: 520px;
+            //Headline -> Breite
+          }
+        }
+        .bild {
+          margin: 0;
+          padding: 0;
+        }
+
+        img {
+
+        }
+      }
+      //padding:115px 14% 0;
+      padding: 0 17% 0;
+    }
+    #philosophie:after {
+      clear: both;
+    }
+  /* ---|2 spalten layout  Rich Text Editor|--- */
+
+  /*---| Impressionen |---*/
+    div.cslide_elem div.ce_text p img {
+      display: block;
+      float: left;
+    }
+    div.cslide_elem div.ce_text p img {
+      float: left;
+      width: 559px;
+      max-width: 559px;
+    }
+  /*---| Impressionen |---*/
+  /* ---|Display Static Aktivierungen|--- */
+    .up {
+      padding: 20px 6% 20px 6%;
+      .ll {
+        margin-top: 12px;
+        float: left;
+        width: 45%;
+        border: none;
+        border-top: 1px solid #D4D4D4;
+        height: 1px;
+      }
+      .button {
+        width: 45px;
+        margin: 0 auto;
+        a {
+          img {
+            margin: 0 auto;
+            display: block;
+          }
+        }
+      }
+      .lr {
+        margin-top: -14px;
+        width: 45%;
+        float: right;
+        border: none;
+        border-top: 1px solid #D4D4D4;
+        height: 1px;
+      }
+    }
+    #Logog {
+
+      display: none;
+      height: 90px;
+      padding: 15px 0 0 35px;
+      float: left;
+      width: auto;
+      margin: 0;
+    }
+    #Logo {
+      padding:20px 5% 0 5%;
+
+
+    }
+    #SubHeader {
+      //todo
+      .s_input {
+        background: url("/files/oc/images/startseite.jpg") no-repeat scroll right top / 100% auto #FFFFFF;
+        height: 285px;
+        width: auto;
+        margin-top:60px !important;
+      }
+      .s_title {
+        padding: 70px 17% 0;
+        font-size: 35px;
+        color: #0064AE;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .s_text {
+        padding-top: 70px;
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    #bubble {
+      //background: rgba(255, 255, 255, .5);
+      width: 490px;
+      margin: auto;
+      padding-top: 10px;
+      span {
+        color: white;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        padding: 25px 40px;
+      }
+    }
+    #rButton {
+      display: block;
+      width: 223px;
+      margin: 15px auto 0;
+      color: white;
+      img {
+        display: block;
+        float: left;
+      }
+      span {
+        letter-spacing: 1px;
+        margin: 10px 0 0 0;
+        font-size: 21px;
+        padding: 0;
+        width: 172px;
+        display: block;
+        float: left;
+      }
+    }
+    #topTopic {
+      text-align: center;
+      position: static;
+      font-size:2em;
+      position:absolute;
+      top:50px;
+      left:50%;
+      margin-left:-15%; /* Breite des Elements + Padding */
+
+    }
+    #NavLink {
+      display:block;
+    }
+    .block {
+      overflow: visible !important;
+    }
+    #container, .inside {
+      position: static;
+      font-size:100.01%;
+    }
+    .col {
+      padding: 0;
+    }
+    header#header {
+      height: 130px;
+    }
+    img#Logo {
+      height: auto;
+      float:left;
+    }
+    #nav_horizontal {
+      display: block;
+    }
+    nav#nav_horizontal.mod_navigation {
+      ul.level_1 {
+        padding-right: 50px;
+        position: relative;
+        top: 35px;
+        li {
+          list-style-type: none;
+          padding-left: 50px;
+        }
+      }
+    }
+    .ansehen {
+      display:none;
+      position: relative;
+      width: 100%;
+      a {
+        width: 161px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+      .text {
+        width: 80px;
+        left: 255px;
+        position: absolute;
+        top: 10px;
+        span {
+          color: white;
+          font-size: 21px;
+        }
+      }
+    }
+    #promo {
+      .inner {
+        .bbcontainer {
+          border-bottom: 1px solid #D4D4D4;
+        }
+        .promoBox {
+          margin: 0 auto;
+          padding-right:5%;
+          padding-left:5%;
+          padding-bottom: 80px;
+          padding-top: 70px;
+          .promoTitel {
+            text-align: center;
+            font-size: 42pt;
+          }
+          .promoText {
+            display: block;
+            font-size: 38pt;
+            padding: 40px 0 25px 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+

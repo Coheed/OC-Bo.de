@@ -1,0 +1,3933 @@
+/*
+ * Gridsystem (col and spans(span_first))
+ */
+#social {
+  font-weight: bold !important;
+}
+
+
+/*
+ * --- DISABLES ---
+ */
+#blueFooter {
+  background: #0064ae !important;
+  height: 80px;
+  text-transform: uppercase;
+}
+
+
+.blue {
+  color: #0064ae;
+}
+
+
+.ansehen {
+  display: none;
+}
+
+
+/*
+ * --- DISABLES ---
+ */
+#Logog {
+  display: none;
+}
+
+
+#nav_horizontal {
+  display: none;
+}
+
+
+.col {
+  padding: 4%;
+  width: 100%;
+}
+
+
+.opacity {
+  opacity: 0.5;
+}
+
+
+.col {
+  border: 0px solid transparent;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+
+
+/*
+ * HTML & MAIN
+ */
+/*
+ * @font-face {
+ * font-family: 'RotisSansSerifStd';
+ * src: url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.eot?') format('eot'),
+ * url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.otf')  format('opentype'),
+ * url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.woff') format('woff'),
+ * url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.ttf')  format('truetype'),
+ * url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.svg#RotisSansSerifStd') format('svg');
+ * }
+ */
+@font-face {  font-family: 'RotisSansSerifStd-Light';  src: url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.eot?') format('eot'), url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.otf') format('opentype'), url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.woff') format('woff'), url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.ttf') format('truetype'), url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.svg#RotisSansSerifStd') format('svg');  font-weight: lighter;  font-style: lighter;}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'RotisSansSerifStd-Light' !important;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  color: grey;
+  text-rendering: optimizeLegibility;
+}
+
+html h1 {
+  font-size: 29px;
+}
+
+html a, html a:active, html a:visited {
+  color: #0064ae;
+  text-decoration: none;
+}
+
+html .tborder {
+  border-top: 1px solid #d4d4d4;
+}
+
+
+/*
+ * maybe split of multi query & fixes
+ */
+video {
+  height: 100%;
+  width: 100%;
+}
+
+
+.mejs-overlay, .mejs-layer, .mejs-overlay-play {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+element.style {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/*
+ * ce_headline ONLY TOPIC
+ */
+.mod_article h1.ce_headline {
+  margin: 0 auto !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+div.cslide_elem .threeRow {
+  float: left;
+}
+
+
+.csWrapper {
+  width: 100%;
+}
+
+
+.csImageholder img {
+  width: 33.33%;
+  display: block;
+  float: left;
+}
+
+
+.gsWrapper {
+  width: 33.33%;
+}
+
+.gsWrapper img {
+  width: 100%;
+}
+
+
+.gsCanvas {
+  width: 100%;
+}
+
+
+.csImageholder canvas {
+  display: block;
+  float: left;
+}
+
+
+.csImageholder a img.zwei {
+  display: block;
+}
+
+
+/*
+ * ce_headline
+ */
+/*
+ * ALLGEMEINER MARGIN TOP FIX
+ */
+#diagnostik, #id-3d-computerplanung, div#leistungsspektrum.mod_article div.ce_text, #philo, #datenschutz, #sitemap, #impressum, div#praxis.mod_article div#praxis.ce_text {
+  margin-top: 60px !important;
+}
+
+
+#diagnostik {
+  margin-top: 70px !important;
+}
+
+
+/*
+ * ALLGEMEINER MARGIN TOP FIX   ende
+ */
+/*
+ * BOTTOMNAVI
+ */
+#bottomnavi {
+  padding-top: 4px;
+  margin: 0 auto;
+  width: 300px;
+  font-size: 17px;
+}
+
+#bottomnavi a {
+  clear: both;
+}
+
+
+/*
+ * BOTTOMNAVI
+ */
+/*
+ * Facebook bottom img
+ */
+.fb img {
+  position: relative;
+}
+
+
+/*
+ * Facebook bottom img
+ */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.mm-list {
+  font-size: 20px;
+}
+
+
+#loginBox {
+  color: white;
+  display: none;
+}
+
+
+/*
+ * MEDIA QUERY INCLUDES
+ */
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  a#NavLink {
+  background: url("/files/oc/images/mmenu.png") no-repeat scroll center center grey;
+  height: 40px;
+  width: 40px;
+  text-indent: -999px;
+  float: right;
+}
+
+
+#mainNavi {
+  display: none;
+  padding-top: 66px;
+  float: right;
+  font-size: 21px;
+  margin-right: 25px;
+}
+
+#mainNavi div {
+  float: left;
+  margin-left: 20px;
+}
+
+
+#subNavi {
+  display: none;
+  height: 60px;
+  width: 100%;
+  float: right;
+  font-size: 19px;
+  background: "#0064AE";
+  padding-right: 25px;
+  margin-top: 38px;
+}
+
+#subNavi .subLink {
+  opacity: 0;
+}
+
+#subNavi a {
+  color: white;
+  float: left;
+}
+
+#subNavi div {
+  border: white 1px solid;
+  padding: 1px 3px;
+  float: right;
+  margin-left: 78px;
+  margin-top: 7px;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+div#impressionen.ce_caroufredsel_start {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div#impressionen.ce_caroufredsel_start div.caroufredsel_wrapper img {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.carouWrapper {
+  width: 100%;
+}
+
+.carouWrapper a {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+.carouCenter {
+  background: "#0064AE";
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+
+.carouCenter a:nth-of-type(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+.caroufredsel_pagi a {
+  background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll transparent;
+  display: inline-block;
+  height: 30px;
+  margin: 7px 5px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: -999px;
+  width: 30px;
+}
+
+
+.caroufredsel_pagi a.selected {
+  background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll transparent;
+}
+
+
+div.mod_caroufredsel.block {
+  overflow: hidden !important;
+}
+
+
+.caroufredsel_controls {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+.caroufredsel_controls .caroufredsel_navi {
+  padding: 90px 0;
+  position: relative;
+  float: left;
+  left: -50%;
+}
+.caroufredsel_controls .caroufredsel_navi img {
+  display: block;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_pagi {
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_next {
+  margin-left: 80px;
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_prev {
+  margin-right: 80px;
+  float: left;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+/*
+ * --- DISABLES ---
+ */
+.ansehen, .up {
+  display: block;
+}
+
+
+#subheader {
+  display: none;
+}
+
+
+#bigFooter {
+  clear: both;
+}
+
+#bigFooter h3 {
+  font-size: 42pt;
+  text-align: center;
+  font-weight: 100;
+  color: "#0064AE";
+  margin-top: 60px;
+}
+
+#bigFooter #social {
+  height: 470px;
+  background: url("/files/oc/images/socialBg.jpg") no-repeat;
+  background-size: 100% auto;
+}
+#bigFooter #social h1 {
+  padding-top: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: "#0064AE";
+  font-weight: bolder;
+  font-size: 40px;
+}
+#bigFooter #social p {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -20px;
+}
+#bigFooter #social p a, #bigFooter #social p a:active, #bigFooter #social p a:visited {
+  color: grey;
+  margin: 0 10px;
+  font-size: 19px;
+}
+#bigFooter #social #copyright {
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: grey;
+}
+
+#bigFooter #blueFooter {
+  background: #0064ae;
+  height: 91px;
+  text-transform: uppercase;
+}
+#bigFooter #blueFooter .left {
+  padding: 38px 0 35px 20px;
+  float: left;
+}
+#bigFooter #blueFooter .right {
+  padding: 35px 20px 35px 0;
+  float: right;
+}
+#bigFooter #blueFooter a, #bigFooter #blueFooter a:active, #bigFooter #blueFooter a:visited {
+  color: white;
+  margin: 0 5px;
+}
+#bigFooter #blueFooter a:after {
+  content: '\0000a0\ \0000a0\ .';
+}
+#bigFooter #blueFooter a:last-child:after {
+  content: " ";
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ * --- DISABLES ---
+ */
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * 
+ * BILD LINKS TEXT RECHTS FERTIG
+ * #philosophie.mod_article div.ce_text{
+ * height:1600px;
+ * float:left;
+ * }
+ * #philosophie {
+ * padding:115px 14% 0;
+ * .text{
+ * width:500px;//TextBaustein -> Breite
+ * float:right;
+ * .blueTopic {
+ * float: none !important;
+ * width:500px;//Headline -> Breite
+ * }
+ * }
+ * .bild{
+ * margin:0;
+ * padding:0;
+ * }
+ * 
+ * img{
+ * float:left;
+ * }
+ * }
+ */
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.mod_article .ce_text h1 {
+  color: "#0064AE";
+  font-weight: 100;
+}
+
+
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+  color: "#0064AE";
+}
+
+
+#philosophie.mod_article div.ce_text {
+  height: 1600px;
+  float: left;
+}
+
+
+#philosophie, #praxis {
+  padding: 0 17% 0;
+}
+
+#philosophie .imglinks, #praxis .imglinks {
+  min-height: 350px;
+}
+#philosophie .imglinks .text, #praxis .imglinks .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imglinks .bild, #praxis .imglinks .bild {
+  margin: 0;
+  padding: 0;
+}
+
+#philosophie .imgrechts, #praxis .imgrechts {
+  min-height: 350px;
+}
+#philosophie .imgrechts .text, #praxis .imgrechts .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imgrechts .text .blueTopic, #praxis .imgrechts .text .blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+}
+#philosophie .imgrechts .bild, #praxis .imgrechts .bild {
+  margin: 0;
+  padding: 0;
+}
+
+
+#philosophie:after {
+  clear: both;
+}
+
+
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * ---| Impressionen |---
+ */
+div.cslide_elem div.ce_text p img {
+  display: block;
+  float: left;
+}
+
+
+div.cslide_elem div.ce_text p img {
+  float: left;
+  width: 559px;
+  max-width: 559px;
+}
+
+
+/*
+ * ---| Impressionen |---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+.up {
+  padding: 20px 6% 20px 6%;
+}
+
+.up .ll {
+  margin-top: 12px;
+  float: left;
+  width: 45%;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+.up .button {
+  width: 45px;
+  margin: 0 auto;
+}
+.up .button a img {
+  margin: 0 auto;
+  display: block;
+}
+
+.up .lr {
+  margin-top: -14px;
+  width: 45%;
+  float: right;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+
+#Logog {
+  display: none;
+  height: 90px;
+  padding: 15px 0 0 35px;
+  float: left;
+  width: auto;
+  margin: 0;
+}
+
+
+
+#SubHeader .s_input {
+  background: url("/files/oc/images/startseite_frauen.jpg") no-repeat scroll right top / 100% auto white;
+  height: 1036px;
+  max-height: 100%;
+  width: auto;
+}
+
+#SubHeader .s_title {
+  padding: 70px 17% 0;
+  font-size: 35px;
+  color: "#0064AE";
+  margin: 0 auto;
+  text-align: center;
+}
+
+#SubHeader .s_text {
+  padding-top: 70px;
+  font-size: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#bubble {
+  width: 625px;
+  height: 315px;
+  margin: auto;
+}
+
+#bubble p {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 53px;
+  float: left;
+  margin-top: 32%;
+}
+
+
+#rButton {
+  display: block;
+  width: 270px;
+  margin: 15px auto 0;
+  color: white;
+}
+
+#rButton img {
+  display: block;
+  float: left;
+}
+
+#rButton span {
+  letter-spacing: 1px;
+  margin: 10px 0 0 0;
+  font-size: 21px;
+  padding: 0;
+  width: 172px;
+  display: block;
+  float: left;
+}
+
+
+#topTopic {
+  display: block;
+  float: left;
+  width: 100px;
+  margin: 0 auto;
+  padding-left: 80px;
+  :     ;
+}
+
+
+#NavLink {
+  display: block;
+}
+
+
+.block {
+  overflow: visible !important;
+}
+
+
+#container, .inside {
+  position: static;
+}
+
+
+.col {
+  padding: 0;
+}
+
+
+header#header {
+  height: 130px;
+}
+
+
+img#Logo {
+  height: 40px;
+  float: left;
+}
+
+
+#nav_horizontal {
+  display: block;
+}
+
+
+nav#nav_horizontal.mod_navigation ul.level_1 {
+  padding-right: 50px;
+  position: relative;
+  top: 35px;
+}
+nav#nav_horizontal.mod_navigation ul.level_1 li {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+
+.ansehen {
+  position: relative;
+  width: 100%;
+}
+
+.ansehen a {
+  width: 161px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.ansehen .text {
+  width: 80px;
+  left: 300px;
+  position: absolute;
+  top: 10px;
+}
+.ansehen .text span {
+  color: white;
+  font-size: 21px;
+}
+
+
+#promo .inner .bbcontainer {
+  border-bottom: 1px solid #d4d4d4;
+}
+#promo .inner .promoBox {
+  margin: 0 auto;
+  width: 690px;
+  padding-bottom: 80px;
+  padding-top: 70px;
+}
+#promo .inner .promoBox .promoTitel {
+  text-align: center;
+  font-size: 42pt;
+}
+#promo .inner .promoBox .promoText {
+  display: block;
+  font-size: 38pt;
+  padding: 40px 0 25px 0;
+  text-align: center;
+}
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  #rButton, #bubble {
+  display: none;
+}
+
+
+a#NavLink {
+  /*
+ * background: url("/files/oc/images/mmenu.png") no-repeat scroll center center;
+ * background-size: 100% 100%;
+ * height: 40px;
+ * width: 40px;
+ * text-indent: -999px;
+ * float:right;
+ * margin: 2%;
+ */
+
+  background: url("/files/oc/images/mmenu.png") no-repeat scroll center center;
+  background-size: 93%;
+  height: 70px;
+  width: 15%;
+  text-indent: -999px;
+  float: right;
+  margin-top: 42px;
+  margin-right: 5%;
+}
+
+
+#mainNavi {
+  display: none;
+  padding-top: 66px;
+  float: right;
+  font-size: 21px;
+  margin-right: 25px;
+}
+
+#mainNavi div {
+  float: left;
+  margin-left: 20px;
+}
+
+
+#subNavi {
+  display: none;
+  height: 80px;
+  width: 100%;
+  float: right;
+  font-size: 19px;
+  background: #0064ae;
+  padding-right: 25px;
+  margin-top: 25px;
+}
+
+#subNavi .subLink {
+  opacity: 0;
+}
+
+#subNavi a {
+  color: white;
+  float: left;
+}
+
+#subNavi div {
+  border: white 1px solid;
+  padding: 5px 17px 5px 17px;
+  float: right;
+  margin-left: 20px;
+  margin-top: 18px;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+div#impressionen.ce_caroufredsel_start {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div#impressionen.ce_caroufredsel_start div.caroufredsel_wrapper img {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.carouWrapper {
+  width: 100%;
+}
+
+.carouWrapper a {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+.carouCenter {
+  background: #0064ae;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+
+.carouCenter a:nth-of-type(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+.caroufredsel_pagi a {
+  background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll transparent;
+  display: inline-block;
+  height: 30px;
+  margin: 7px 5px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: -999px;
+  width: 30px;
+}
+
+
+.caroufredsel_pagi a.selected {
+  background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll transparent;
+}
+
+
+div.mod_caroufredsel.block {
+  overflow: hidden !important;
+}
+
+
+.caroufredsel_controls {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+.caroufredsel_controls .caroufredsel_navi {
+  padding: 90px 0;
+  position: relative;
+  float: left;
+  left: -50%;
+}
+.caroufredsel_controls .caroufredsel_navi img {
+  display: block;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_pagi {
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_next {
+  margin-left: 80px;
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_prev {
+  margin-right: 80px;
+  float: left;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+/*
+ * --- DISABLES ---
+ */
+.ansehen, .up {
+  display: block;
+}
+
+
+#bigFooter {
+  clear: both;
+}
+
+#bigFooter h3 {
+  font-size: 42pt;
+  text-align: center;
+  font-weight: 100;
+  color: #0064ae;
+  margin-top: 60px;
+}
+
+#bigFooter #social {
+  height: 785px;
+  background: url("/files/oc/images/socialBg.jpg") no-repeat;
+  background-size: 100% auto;
+}
+#bigFooter #social h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #0064ae;
+  font-weight: bolder;
+  font-size: 50px;
+  padding-top: 11px;
+}
+#bigFooter #social p {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -20px;
+}
+#bigFooter #social p a, #bigFooter #social p a:active, #bigFooter #social p a:visited {
+  color: grey;
+  display: block;
+  font-size: 30px;
+  margin-top: 10px;
+}
+#bigFooter #social #copyright {
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: grey;
+}
+
+#bigFooter #blueFooter {
+  background: #0064ae;
+  height: 340px;
+  text-transform: uppercase;
+}
+#bigFooter #blueFooter .left {
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 200px;
+}
+#bigFooter #blueFooter .right {
+  margin: 0 auto;
+  width: 200px;
+}
+#bigFooter #blueFooter a, #bigFooter #blueFooter a:active, #bigFooter #blueFooter a:visited {
+  color: white;
+  display: block;
+  margin: 0 5px;
+  font-size: 30px;
+  text-align: center;
+}
+#bigFooter #blueFooter a:last-child:after {
+  content: " ";
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ * --- DISABLES ---
+ */
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * 
+ * BILD LINKS TEXT RECHTS FERTIG
+ * #philosophie.mod_article div.ce_text{
+ * height:1600px;
+ * float:left;
+ * }
+ * #philosophie {
+ * padding:115px 14% 0;
+ * .text{
+ * width:500px;//TextBaustein -> Breite
+ * float:right;
+ * .blueTopic {
+ * float: none !important;
+ * width:500px;//Headline -> Breite
+ * }
+ * }
+ * .bild{
+ * margin:0;
+ * padding:0;
+ * }
+ * 
+ * img{
+ * float:left;
+ * }
+ * }
+ */
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.mod_article .ce_text h1 {
+  color: #0064ae;
+  font-weight: 100;
+}
+
+
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+  color: #0064ae;
+}
+
+
+#philosophie.mod_article div.ce_text {
+  height: 1600px;
+  float: left;
+}
+
+
+#philosophie, #praxis {
+  padding: 0 17% 0;
+}
+
+#philosophie .imglinks, #praxis .imglinks {
+  min-height: 350px;
+}
+#philosophie .imglinks .text, #praxis .imglinks .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imglinks .bild, #praxis .imglinks .bild {
+  margin: 0;
+  padding: 0;
+}
+
+#philosophie .imgrechts, #praxis .imgrechts {
+  min-height: 350px;
+}
+#philosophie .imgrechts .text, #praxis .imgrechts .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imgrechts .text .blueTopic, #praxis .imgrechts .text .blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+}
+#philosophie .imgrechts .bild, #praxis .imgrechts .bild {
+  margin: 0;
+  padding: 0;
+}
+
+
+#philosophie:after {
+  clear: both;
+}
+
+
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * ---| Impressionen |---
+ */
+div.cslide_elem div.ce_text p img {
+  display: block;
+  float: left;
+}
+
+
+div.cslide_elem div.ce_text p img {
+  float: left;
+  width: 559px;
+  max-width: 559px;
+}
+
+
+/*
+ * ---| Impressionen |---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+.up {
+  padding: 20px 6% 20px 6%;
+}
+
+.up .ll {
+  margin-top: 12px;
+  float: left;
+  width: 45%;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+.up .button {
+  width: 45px;
+  margin: 0 auto;
+}
+.up .button a img {
+  margin: 0 auto;
+  display: block;
+}
+
+.up .lr {
+  margin-top: -14px;
+  width: 45%;
+  float: right;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+
+#Logog {
+  display: none;
+  height: 90px;
+  padding: 15px 0 0 35px;
+  float: left;
+  width: auto;
+  margin: 0;
+}
+
+
+#Logo {
+  padding: 20px 5% 0 5%;
+}
+
+
+#SubHeader .s_input {
+  background: url("/files/oc/images/startseite.jpg") no-repeat scroll right top / 100% auto white;
+  height: 285px;
+  width: auto;
+  margin-top: 60px !important;
+}
+
+#SubHeader .s_title {
+  padding: 70px 17% 0;
+  font-size: 35px;
+  color: #0064ae;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#SubHeader .s_text {
+  padding-top: 70px;
+  font-size: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#bubble {
+  width: 490px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+#bubble span {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  padding: 25px 40px;
+}
+
+
+#rButton {
+  display: block;
+  width: 223px;
+  margin: 15px auto 0;
+  color: white;
+}
+
+#rButton img {
+  display: block;
+  float: left;
+}
+
+#rButton span {
+  letter-spacing: 1px;
+  margin: 10px 0 0 0;
+  font-size: 21px;
+  padding: 0;
+  width: 172px;
+  display: block;
+  float: left;
+}
+
+
+#topTopic {
+  text-align: center;
+  position: static;
+  font-size: 2em;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -15%;
+  /*
+ * Breite des Elements + Padding
+ */
+
+}
+
+
+#NavLink {
+  display: block;
+}
+
+
+.block {
+  overflow: visible !important;
+}
+
+
+#container, .inside {
+  position: static;
+  font-size: 100.01%;
+}
+
+
+.col {
+  padding: 0;
+}
+
+
+header#header {
+  height: 130px;
+}
+
+
+img#Logo {
+  height: auto;
+  float: left;
+}
+
+
+#nav_horizontal {
+  display: block;
+}
+
+
+nav#nav_horizontal.mod_navigation ul.level_1 {
+  padding-right: 50px;
+  position: relative;
+  top: 35px;
+}
+nav#nav_horizontal.mod_navigation ul.level_1 li {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+
+.ansehen {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.ansehen a {
+  width: 161px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.ansehen .text {
+  width: 80px;
+  left: 255px;
+  position: absolute;
+  top: 10px;
+}
+.ansehen .text span {
+  color: white;
+  font-size: 21px;
+}
+
+
+#promo .inner .bbcontainer {
+  border-bottom: 1px solid #d4d4d4;
+}
+#promo .inner .promoBox {
+  margin: 0 auto;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 80px;
+  padding-top: 70px;
+}
+#promo .inner .promoBox .promoTitel {
+  text-align: center;
+  font-size: 42pt;
+}
+#promo .inner .promoBox .promoText {
+  display: block;
+  font-size: 38pt;
+  padding: 40px 0 25px 0;
+  text-align: center;
+}
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1021px) {
+  #rButton, #bubble {
+  display: none;
+}
+
+
+#mainNavi {
+  padding-top: 66px;
+  float: right;
+  font-size: 21px;
+  margin-right: 25px;
+}
+
+#mainNavi div {
+  float: left;
+  margin-left: 20px;
+}
+
+
+#subNavi {
+  height: 40px;
+  width: 100%;
+  float: right;
+  font-size: 19px;
+  background: #0064ae;
+  padding-right: 27px;
+  margin-top: 38px;
+}
+
+#subNavi .subLink {
+  opacity: 0;
+}
+
+#subNavi a {
+  color: white;
+  float: left;
+}
+
+#subNavi div {
+  padding: 1px 3px;
+  float: right;
+  margin-left: 40px;
+  margin-top: 7px;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+div#impressionen.ce_caroufredsel_start {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div#impressionen.ce_caroufredsel_start div.caroufredsel_wrapper img {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.carouWrapper {
+  width: 100%;
+}
+
+.carouWrapper a {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+.carouCenter {
+  background: #0064ae;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+
+.carouCenter a:nth-of-type(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+.caroufredsel_pagi a {
+  background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll transparent;
+  display: inline-block;
+  height: 30px;
+  margin: 7px 5px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: -999px;
+  width: 30px;
+}
+
+
+.caroufredsel_pagi a.selected {
+  background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll transparent;
+}
+
+
+div.mod_caroufredsel.block {
+  overflow: hidden !important;
+}
+
+
+.caroufredsel_controls {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+.caroufredsel_controls .caroufredsel_navi {
+  padding: 90px 0;
+  position: relative;
+  float: left;
+  left: -50%;
+}
+.caroufredsel_controls .caroufredsel_navi img {
+  display: block;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_pagi {
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_next {
+  margin-left: 80px;
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_prev {
+  margin-right: 80px;
+  float: left;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+/*
+ * --- DISABLES ---
+ */
+
+#bigFooter {
+  clear: both;
+}
+
+#bigFooter h3 {
+  font-size: 42pt;
+  text-align: center;
+  font-weight: 100;
+  color: #0064ae;
+  margin-top: 60px;
+}
+
+#bigFooter #social {
+  height: 470px;
+  background: url("/files/oc/images/socialBg.jpg") no-repeat;
+  background-size: 100% auto;
+}
+#bigFooter #social h1 {
+  padding-top: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0064ae;
+  font-weight: bolder;
+  font-size: 40px;
+}
+#bigFooter #social p {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -20px;
+}
+#bigFooter #social p a, #bigFooter #social p a:active, #bigFooter #social p a:visited {
+  color: grey;
+  margin: 0 10px;
+  font-size: 19px;
+}
+#bigFooter #social #copyright {
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: grey;
+}
+
+#bigFooter #blueFooter {
+  background: #0064ae;
+  height: 91px;
+  text-transform: uppercase;
+}
+#bigFooter #blueFooter .left {
+  padding: 35px 0 35px 20px;
+  float: left;
+}
+#bigFooter #blueFooter .right {
+  padding: 35px 20px 35px 0;
+  float: right;
+}
+#bigFooter #blueFooter a, #bigFooter #blueFooter a:active, #bigFooter #blueFooter a:visited {
+  color: white;
+  margin: 0 5px;
+}
+#bigFooter #blueFooter a:after {
+  content: '\0000a0\ \0000a0\ .';
+}
+#bigFooter #blueFooter a:last-child:after {
+  content: " ";
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ * --- DISABLES ---
+ */
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * 
+ * BILD LINKS TEXT RECHTS FERTIG
+ * #philosophie.mod_article div.ce_text{
+ * height:1600px;
+ * float:left;
+ * }
+ * #philosophie {
+ * padding:115px 14% 0;
+ * .text{
+ * width:500px;//TextBaustein -> Breite
+ * float:right;
+ * .blueTopic {
+ * float: none !important;
+ * width:500px;//Headline -> Breite
+ * }
+ * }
+ * .bild{
+ * margin:0;
+ * padding:0;
+ * }
+ * 
+ * img{
+ * float:left;
+ * }
+ * }
+ */
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.mod_article .ce_text h1 {
+  color: #0064ae;
+  font-weight: 100;
+}
+
+
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+  color: #0064ae;
+}
+
+
+#philosophie.mod_article div.ce_text {
+  height: 1600px;
+  float: left;
+}
+
+
+#philosophie, #praxis {
+  padding: 0 17% 0;
+}
+
+#philosophie .imglinks, #praxis .imglinks {
+  min-height: 350px;
+}
+#philosophie .imglinks .text, #praxis .imglinks .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imglinks .bild, #praxis .imglinks .bild {
+  margin: 0;
+  padding: 0;
+}
+
+#philosophie .imgrechts, #praxis .imgrechts {
+  min-height: 350px;
+}
+#philosophie .imgrechts .text, #praxis .imgrechts .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imgrechts .text .blueTopic, #praxis .imgrechts .text .blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+}
+#philosophie .imgrechts .bild, #praxis .imgrechts .bild {
+  margin: 0;
+  padding: 0;
+}
+
+
+#philosophie:after {
+  clear: both;
+}
+
+
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * ---| Impressionen |---
+ */
+div.cslide_elem div.ce_text p img {
+  display: block;
+  float: left;
+}
+
+
+div.cslide_elem div.ce_text p img {
+  float: left;
+  width: 559px;
+  max-width: 559px;
+}
+
+
+/*
+ * ---| Impressionen |---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+.up {
+  padding: 20px 6% 20px 6%;
+}
+
+.up .ll {
+  margin-top: 12px;
+  float: left;
+  width: 45%;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+.up .button {
+  width: 45px;
+  margin: 0 auto;
+}
+.up .button a img {
+  margin: 0 auto;
+  display: block;
+}
+
+.up .lr {
+  margin-top: -14px;
+  width: 45%;
+  float: right;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+
+#Logog {
+  display: block;
+  height: 90px;
+  padding: 15px 0 0 35px;
+  float: left;
+  width: auto;
+  margin: 0;
+}
+
+
+#Logo {
+  display: none;
+}
+
+
+#SubHeader .s_input {
+  background: url("/files/oc/images/startseite.jpg") no-repeat scroll right top / 100% auto white;
+  height: 460px;
+  width: auto;
+}
+
+#SubHeader .s_title {
+  padding-top: 70px;
+  font-size: 48px;
+  color: #0064ae;
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#SubHeader .s_text {
+  padding-top: 70px;
+  font-size: 24px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#bubble {
+  width: 625px;
+  height: 315px;
+  margin: auto;
+}
+
+#bubble p {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 53px;
+  float: left;
+  margin-top: 32%;
+}
+
+
+#rButton {
+  width: 270px;
+  margin: 15px auto 0;
+  color: white;
+}
+
+#rButton img {
+  display: block;
+  float: left;
+}
+
+#rButton span {
+  letter-spacing: 1px;
+  margin: 10px 0 0 0;
+  font-size: 21px;
+  padding: 0;
+  width: 172px;
+  display: block;
+  float: left;
+}
+
+
+#topTopic {
+  display: none;
+}
+
+
+#NavLink {
+  display: none;
+}
+
+
+.block {
+  overflow: visible !important;
+}
+
+
+#container, .inside {
+  position: static;
+}
+
+
+.col {
+  padding: 0;
+}
+
+
+header#header {
+  height: 130px;
+}
+
+
+img#Logo {
+  height: 40px;
+}
+
+
+#nav_horizontal {
+  display: block;
+}
+
+
+nav#nav_horizontal.mod_navigation ul.level_1 {
+  padding-right: 50px;
+  position: relative;
+  top: 35px;
+}
+nav#nav_horizontal.mod_navigation ul.level_1 li {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+
+.ansehen {
+  margin: 0 auto;
+  position: relative;
+  width: 163px;
+}
+
+.ansehen a {
+  width: 161px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.ansehen .text {
+  width: 80px;
+  left: 300px;
+  position: absolute;
+  top: 10px;
+}
+.ansehen .text span {
+  color: white;
+  font-size: 21px;
+}
+
+
+#promo .inner .bbcontainer {
+  border-bottom: 1px solid #d4d4d4;
+}
+#promo .inner .promoBox {
+  margin: 0 auto;
+  width: 690px;
+  padding-bottom: 80px;
+  padding-top: 70px;
+}
+#promo .inner .promoBox .promoTitel {
+  text-align: center;
+  font-size: 42pt;
+}
+#promo .inner .promoBox .promoText {
+  display: block;
+  font-size: 38pt;
+  padding: 40px 0 25px 0;
+  text-align: center;
+}
+}
+
+
+@media screen and (min-width:1022px) and (max-width:1279px) {
+  #mainNavi {
+  padding-top: 66px;
+  float: right;
+  font-size: 21px;
+  margin-right: 25px;
+}
+
+#mainNavi div {
+  float: left;
+  margin-left: 20px;
+}
+
+
+#subNavi {
+  height: 40px;
+  width: 100%;
+  float: right;
+  font-size: 19px;
+  background: #0064ae;
+  padding-right: 27px;
+  margin-top: 38px;
+}
+
+#subNavi .subLink {
+  opacity: 0;
+}
+
+#subNavi a {
+  color: white;
+  float: left;
+}
+
+#subNavi div {
+  padding: 1px 3px;
+  float: right;
+  margin-left: 40px;
+  margin-top: 7px;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+div#impressionen.ce_caroufredsel_start {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div#impressionen.ce_caroufredsel_start div.caroufredsel_wrapper img {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.carouWrapper {
+  width: 100%;
+}
+
+.carouWrapper a {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+.carouCenter {
+  background: #0064ae;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+
+.carouCenter a:nth-of-type(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+.caroufredsel_pagi a {
+  background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll transparent;
+  display: inline-block;
+  height: 30px;
+  margin: 7px 5px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: -999px;
+  width: 30px;
+}
+
+
+.caroufredsel_pagi a.selected {
+  background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll transparent;
+}
+
+
+div.mod_caroufredsel.block {
+  overflow: hidden !important;
+}
+
+
+.caroufredsel_controls {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+.caroufredsel_controls .caroufredsel_navi {
+  padding: 90px 0;
+  position: relative;
+  float: left;
+  left: -50%;
+}
+.caroufredsel_controls .caroufredsel_navi img {
+  display: block;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_pagi {
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_next {
+  margin-left: 80px;
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_prev {
+  margin-right: 80px;
+  float: left;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+/*
+ * --- DISABLES ---
+ */
+.ansehen, #SubHeader, .up {
+  display: block;
+}
+
+
+#bigFooter {
+  clear: both;
+}
+
+#bigFooter h3 {
+  font-size: 42pt;
+  text-align: center;
+  font-weight: 100;
+  color: #0064ae;
+  margin-top: 60px;
+}
+
+#bigFooter #social {
+  height: 470px;
+  background: url("/files/oc/images/socialBg.jpg") no-repeat;
+  background-size: 100% auto;
+}
+#bigFooter #social h1 {
+  padding-top: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0064ae;
+  font-weight: bolder;
+  font-size: 40px;
+}
+#bigFooter #social p {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -20px;
+}
+#bigFooter #social p a, #bigFooter #social p a:active, #bigFooter #social p a:visited {
+  color: grey;
+  margin: 0 10px;
+  font-size: 19px;
+}
+#bigFooter #social #copyright {
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: grey;
+}
+
+#bigFooter #blueFooter {
+  background: #0064ae;
+  height: 91px;
+  text-transform: uppercase;
+}
+#bigFooter #blueFooter .left {
+  padding: 35px 0 35px 20px;
+  float: left;
+}
+#bigFooter #blueFooter .right {
+  padding: 35px 20px 35px 0;
+  float: right;
+}
+#bigFooter #blueFooter a, #bigFooter #blueFooter a:active, #bigFooter #blueFooter a:visited {
+  color: white;
+  margin: 0 5px;
+}
+#bigFooter #blueFooter a:after {
+  content: '\0000a0\ \0000a0\ .';
+}
+#bigFooter #blueFooter a:last-child:after {
+  content: " ";
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ * --- DISABLES ---
+ */
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * 
+ * BILD LINKS TEXT RECHTS FERTIG
+ * #philosophie.mod_article div.ce_text{
+ * height:1600px;
+ * float:left;
+ * }
+ * #philosophie {
+ * padding:115px 14% 0;
+ * .text{
+ * width:500px;//TextBaustein -> Breite
+ * float:right;
+ * .blueTopic {
+ * float: none !important;
+ * width:500px;//Headline -> Breite
+ * }
+ * }
+ * .bild{
+ * margin:0;
+ * padding:0;
+ * }
+ * 
+ * img{
+ * float:left;
+ * }
+ * }
+ */
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.mod_article .ce_text h1 {
+  color: #0064ae;
+  font-weight: 100;
+}
+
+
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+  color: #0064ae;
+}
+
+
+#philosophie.mod_article div.ce_text {
+  height: 1600px;
+  float: left;
+}
+
+
+#philosophie, #praxis {
+  padding: 0 17% 0;
+}
+
+#philosophie .imglinks, #praxis .imglinks {
+  min-height: 350px;
+}
+#philosophie .imglinks .text, #praxis .imglinks .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imglinks .bild, #praxis .imglinks .bild {
+  margin: 0;
+  padding: 0;
+}
+
+#philosophie .imgrechts, #praxis .imgrechts {
+  min-height: 350px;
+}
+#philosophie .imgrechts .text, #praxis .imgrechts .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imgrechts .text .blueTopic, #praxis .imgrechts .text .blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+}
+#philosophie .imgrechts .bild, #praxis .imgrechts .bild {
+  margin: 0;
+  padding: 0;
+}
+
+
+#philosophie:after {
+  clear: both;
+}
+
+
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * ---| Impressionen |---
+ */
+div.cslide_elem div.ce_text p img {
+  display: block;
+  float: left;
+}
+
+
+div.cslide_elem div.ce_text p img {
+  float: left;
+  width: 559px;
+  max-width: 559px;
+}
+
+
+/*
+ * ---| Impressionen |---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+.up {
+  padding: 20px 6% 20px 6%;
+}
+
+.up .ll {
+  margin-top: 12px;
+  float: left;
+  width: 45%;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+.up .button {
+  width: 45px;
+  margin: 0 auto;
+}
+.up .button a img {
+  margin: 0 auto;
+  display: block;
+}
+
+.up .lr {
+  margin-top: -14px;
+  width: 45%;
+  float: right;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+
+#Logog {
+  display: block;
+  height: 90px;
+  padding: 15px 0 0 35px;
+  float: left;
+  width: auto;
+  margin: 0;
+}
+
+
+#Logo {
+  display: none;
+}
+
+
+#SubHeader .s_input {
+  background: url("/files/oc/images/startseite_frauen.jpg") no-repeat scroll right top / 100% auto white;
+  height: 1036px;
+  max-height: 100%;
+  width: auto;
+}
+
+#SubHeader .s_title {
+  padding-top: 70px;
+  font-size: 48px;
+  color: #0064ae;
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#SubHeader .s_text {
+  padding-top: 70px;
+  font-size: 24px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#bubble {
+  width: 625px;
+  height: 315px;
+  margin: auto;
+}
+
+#bubble p {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 53px;
+  float: left;
+  margin-top: 32%;
+}
+
+
+#rButton {
+  display: block;
+  width: 270px;
+  margin: 15px auto 0;
+  color: white;
+}
+
+#rButton img {
+  display: block;
+  float: left;
+}
+
+#rButton span {
+  letter-spacing: 1px;
+  margin: 10px 0 0 0;
+  font-size: 21px;
+  padding: 0;
+  width: 172px;
+  display: block;
+  float: left;
+}
+
+
+#topTopic {
+  display: none;
+}
+
+
+#NavLink {
+  display: none;
+}
+
+
+.block {
+  overflow: visible !important;
+}
+
+
+#container, .inside {
+  position: static;
+}
+
+
+.col {
+  padding: 0;
+}
+
+
+header#header {
+  height: 130px;
+}
+
+
+img#Logo {
+  height: 40px;
+}
+
+
+#nav_horizontal {
+  display: block;
+}
+
+
+nav#nav_horizontal.mod_navigation ul.level_1 {
+  padding-right: 50px;
+  position: relative;
+  top: 35px;
+}
+nav#nav_horizontal.mod_navigation ul.level_1 li {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+
+.ansehen {
+  margin: 0 auto;
+  position: relative;
+  width: 163px;
+}
+
+.ansehen a {
+  width: 161px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.ansehen .text {
+  width: 80px;
+  left: 300px;
+  position: absolute;
+  top: 10px;
+}
+.ansehen .text span {
+  color: white;
+  font-size: 21px;
+}
+
+
+#promo .inner .bbcontainer {
+  border-bottom: 1px solid #d4d4d4;
+}
+#promo .inner .promoBox {
+  margin: 0 auto;
+  width: 690px;
+  padding-bottom: 80px;
+  padding-top: 70px;
+}
+#promo .inner .promoBox .promoTitel {
+  text-align: center;
+  font-size: 42pt;
+}
+#promo .inner .promoBox .promoText {
+  display: block;
+  font-size: 38pt;
+  padding: 40px 0 25px 0;
+  text-align: center;
+}
+
+
+/*
+ * ---------------------------------------------------  TODO -
+ */
+div>.ce_text:nth-of-type(4n+1) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(4n+1) p {
+  font-size: 21px;
+  width: 584px;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(odd) {
+  float: left;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(even) {
+  float: right;
+}
+
+
+div>.ce_text:nth-of-type(3n+3) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(3n+3) p {
+  font-size: 21px;
+  width: 584px;
+}
+
+div>.ce_text:nth-of-type(3n+3) p:nth-child(odd) {
+  float: right;
+}
+
+
+
+/*
+ * ----------------------------------------------------
+ */
+}
+
+
+@media screen and (min-width:1280px) and (max-width: 1919px) {
+  /*
+ * ---MAIN UND SUB NAVIGATION / MAIN FIRST ---
+ */
+#mainNavi {
+  padding-top: 116px;
+  float: right;
+  font-size: 21px;
+  margin-right: 80px;
+  text-transform: uppercase;
+}
+
+#mainNavi div {
+  float: left;
+  margin-left: 60px;
+}
+
+
+#subNavi {
+  height: 45px;
+  opacity: 0;
+  width: 100%;
+  float: right;
+  font-size: 19px;
+  background: #0064ae;
+  padding-right: 77px;
+  margin-top: 21px;
+}
+
+#subNavi .subNavi {
+  opacity: 0;
+}
+
+#subNavi a {
+  color: white;
+  float: left;
+}
+
+#subNavi div {
+  padding: 1px 3px;
+  float: right;
+  margin-left: 78px;
+  margin-top: 7px;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+div#impressionen.ce_caroufredsel_start {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div#impressionen.ce_caroufredsel_start div.caroufredsel_wrapper img {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.carouWrapper {
+  width: 100%;
+}
+
+.carouWrapper a {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+.carouCenter {
+  background: #0064ae;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+
+.carouCenter a:nth-of-type(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+.caroufredsel_pagi a {
+  background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll transparent;
+  display: inline-block;
+  height: 30px;
+  margin: 7px 5px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: -999px;
+  width: 30px;
+}
+
+
+.caroufredsel_pagi a.selected {
+  background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll transparent;
+}
+
+
+div.mod_caroufredsel.block {
+  overflow: hidden !important;
+}
+
+
+.caroufredsel_controls {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+.caroufredsel_controls .caroufredsel_navi {
+  padding: 90px 0;
+  position: relative;
+  float: left;
+  left: -50%;
+}
+.caroufredsel_controls .caroufredsel_navi img {
+  display: block;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_pagi {
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_next {
+  margin-left: 80px;
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_prev {
+  margin-right: 80px;
+  float: left;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+/*
+ * --- DISABLES ---
+ */
+.ansehen, #SubHeader, .up, .down {
+  display: block;
+}
+
+
+.padding {
+  padding: 0 16.4%;
+}
+
+
+h3.imp {
+  font-size: 35pt;
+  margin: 20px 0 20px;
+  text-align: center;
+  font-weight: lighter;
+  color: #0064ae;
+}
+
+
+#bigFooter {
+  clear: both;
+}
+
+#bigFooter h3 {
+  font-size: 42pt;
+  text-align: center;
+  font-weight: 100;
+  color: #0064ae;
+  margin-top: 60px;
+}
+
+#bigFooter #social {
+  height: 346px;
+  margin: 0;
+  padding: 0;
+  background: url("/files/oc/images/socialBg.jpg") no-repeat;
+  background-position: 0 -27px;
+  background-size: 100% auto;
+}
+#bigFooter #social .BFsocialmedia {
+  padding-top: 50px;
+}
+#bigFooter #social .BFsocialmedia p {
+  padding-top: 10px;
+}
+#bigFooter #social .BFnavigation {
+  padding-top: 45px;
+}
+#bigFooter #social .BFnavigation p {
+  padding-top: 10px;
+}
+#bigFooter #social div h1 {
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  color: #0064ae;
+  font-weight: lighter;
+  font-size: 30px;
+}
+#bigFooter #social p {
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+#bigFooter #social p a, #bigFooter #social p a:active, #bigFooter #social p a:visited {
+  color: grey;
+  margin: 0 10px;
+  font-size: 19px;
+  font-weight: lighter;
+}
+#bigFooter #social p a:hover {
+  color: #0064ae;
+}
+#bigFooter #social #copyright {
+  font-weight: 100;
+  padding-top: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: 0;
+  font-size: 19px;
+  color: grey;
+}
+
+#bigFooter #blueFooter {
+  background: #0064ae;
+  height: 91px;
+  text-transform: uppercase;
+}
+#bigFooter #blueFooter .left {
+  padding: 35px 0 35px 160px;
+  float: left;
+}
+#bigFooter #blueFooter .right {
+  padding: 35px 160px 35px 0;
+  float: right;
+}
+#bigFooter #blueFooter a, #bigFooter #blueFooter a:active, #bigFooter #blueFooter a:visited {
+  color: white !important;
+  margin: 0 5px;
+}
+#bigFooter #blueFooter a:after {
+  content: '\0000a0\ \0000a0\ .';
+}
+#bigFooter #blueFooter a:last-child:after {
+  content: " ";
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ * --- DISABLES ---
+ */
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * 
+ * BILD LINKS TEXT RECHTS FERTIG
+ * #philosophie.mod_article div.ce_text{
+ * height:1600px;
+ * float:left;
+ * }
+ * #philosophie {
+ * padding:115px 14% 0;
+ * .text{
+ * width:500px;//TextBaustein -> Breite
+ * float:right;
+ * .blueTopic {
+ * float: none !important;
+ * width:500px;//Headline -> Breite
+ * }
+ * }
+ * .bild{
+ * margin:0;
+ * padding:0;
+ * }
+ * 
+ * img{
+ * float:left;
+ * }
+ * }
+ */
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.mod_article .ce_text h1 {
+  color: #0064ae;
+  font-weight: 100;
+}
+
+
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+  color: #0064ae;
+}
+
+
+/*
+ * #philosophie.mod_article div.ce_text {
+ * height: 1600px;
+ * float: left;
+ * }
+ */
+/*
+ * ---------------------------------------------------  TODO -
+ */
+div>.ce_text:nth-of-type(4n+1) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(4n+1) p {
+  font-size: 21px;
+  width: 45%;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(odd) {
+  float: left;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(even) {
+  float: right;
+}
+
+
+div>.ce_text:nth-of-type(3n+3) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(3n+3) p {
+  font-size: 21px;
+  width: 45%;
+}
+
+div>.ce_text:nth-of-type(3n+3) p:nth-child(odd) {
+  float: right;
+}
+
+
+
+/*
+ * ----------------------------------------------------
+ */
+/*
+ * ----------------------------------------------------
+ */
+/*
+ * ----------------------------------------------------
+ */
+.mod_article {
+  font-size: 21px;
+  padding: 0 16.4% 0;
+}
+
+.mod_article .imglinks {
+  min-height: 440px;
+  padding-top: 35px;
+}
+.mod_article .imglinks .text {
+  width: 390px;
+  float: right;
+  font-size: inherit;
+}
+.mod_article .imglinks .bild {
+  margin: 0;
+  padding: 0;
+}
+.mod_article .imglinks img {
+  float: left;
+}
+
+.mod_article .imgrechts {
+  min-height: 440px;
+  padding-top: 35px;
+}
+.mod_article .imgrechts img {
+  width: 390px;
+}
+.mod_article .imgrechts .text {
+  width: 390px;
+  float: left;
+  font-size: 21px;
+}
+.mod_article .imgrechts .text .blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+}
+.mod_article .imgrechts .bild {
+  margin: 0;
+  padding: 0;
+}
+.mod_article .imgrechts img {
+  float: right;
+}
+
+
+#philosophie:after {
+  clear: both;
+}
+
+
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * ---| Impressionen |---
+ */
+#Impressionen .mod_article {
+  padding: 0;
+}
+
+
+.cslide_elem .image_container img {
+  width: 100%;
+}
+
+
+#bigFooter div#home.mod_article {
+  padding: 0;
+}
+
+
+/*
+ * ---| Impressionen |---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+.uphover, .downhover {
+  cursor: pointer;
+}
+
+
+.up, .down {
+  padding: 20px 0;
+}
+
+.up .ll, .down .ll {
+  margin-top: 12px;
+  float: left;
+  width: 45%;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+.up .button, .down .button {
+  width: 80px;
+  margin: 0 auto;
+}
+.up .button a img, .down .button a img {
+  margin: 0 auto;
+  display: block;
+}
+
+.up .lr, .down .lr {
+  margin-top: -14px;
+  width: 45%;
+  float: right;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+
+#Logog {
+  display: block;
+  height: 135px;
+  float: left;
+  width: auto;
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 25px;
+}
+
+
+#Logo {
+  display: none;
+}
+
+
+#SubHeader .s_input {
+  background: url("/files/oc/images/startseite_frauen.jpg") no-repeat;
+  background-size: center -60px;
+  max-height: 620px;
+  width: auto;
+  height: 620px;
+}
+
+#SubHeader .s_title {
+  font-size: 48px;
+  color: #0064ae;
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#SubHeader .s_text {
+  padding-top: 9px;
+  font-size: 24px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#bubble {
+  width: 625px;
+  height: 315px;
+  margin: auto;
+}
+
+#bubble p {
+  opacity: 1;
+  color: #0064ae;
+  text-align: center;
+  font-size: 53px;
+  padding-top: 10%;
+}
+
+
+#rButton {
+  cursor: pointer;
+  display: block;
+  width: 270px;
+  margin: 75px auto 0;
+  color: white;
+}
+
+#rButton img {
+  display: block;
+  float: left;
+}
+
+#rButton span {
+  letter-spacing: 1px;
+  margin: 10px 0 0 10px;
+  font-size: 21px;
+  padding: 0;
+  display: block;
+  float: left;
+}
+
+
+#topTopic {
+  display: none;
+}
+
+
+#NavLink {
+  display: none;
+}
+
+
+.block {
+  overflow: visible !important;
+}
+
+
+#container, .inside {
+  position: static;
+}
+
+
+.col {
+  padding: 0;
+}
+
+
+header#header {
+  height: 130px;
+}
+
+
+img#Logo {
+  height: 40px;
+}
+
+
+#nav_horizontal {
+  display: block;
+}
+
+
+nav#nav_horizontal.mod_navigation ul.level_1 {
+  padding-right: 50px;
+  position: relative;
+  top: 35px;
+}
+nav#nav_horizontal.mod_navigation ul.level_1 li {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+
+.ansehen {
+  margin: 0 auto;
+  position: relative;
+  width: 163px;
+}
+
+.ansehen a {
+  width: 161px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.ansehen .text {
+  width: 80px;
+  left: 300px;
+  position: absolute;
+  top: 10px;
+}
+.ansehen .text span {
+  color: white;
+  font-size: 21px;
+}
+
+
+#promo .inner {
+  padding: 24px 16.4% 0;
+}
+#promo .inner .bbcontainer {
+  border-bottom: 1px solid #d4d4d4;
+}
+#promo .inner .promoBox {
+  margin: 0 auto;
+  width: 910px;
+  padding: 2px 0 20px 0;
+}
+#promo .inner .promoBox .promoTitel {
+  text-align: center;
+  font-size: 35pt;
+}
+#promo .inner .promoBox .promoText {
+  display: block;
+  font-size: 23pt;
+  padding: 10px 0 25px 0;
+  text-align: center;
+}
+
+
+
+
+#loginBox div.mod_login form#tl_logout div.formbody p.login_info {
+  color: white;
+}
+
+
+#loginBox {
+  padding: 20px;
+  display: none;
+  position: absolute;
+  background: rgba(0, 100, 174, 0.8);
+  margin-left: 1471px;
+  margin-top: -190px;
+  border-radius: 10px;
+  height: 160px;
+  width: 330px;
+}
+
+#loginBox a, #loginBox a:active, #loginBox a:visited {
+  color: white;
+}
+
+#loginBox a:hover {
+  text-decoration: underline;
+}
+
+#loginBox label {
+  color: white;
+}
+
+#loginBox input {
+  color: black;
+}
+
+#loginBox label[type=password] {
+  margin-top: 10px;
+}
+
+#loginBox .submit_container {
+  float: left;
+  margin-top: 70px;
+}
+
+#loginBox div.formbody label {
+  margin-top: 10px;
+}
+
+#loginBox input {
+  float: right;
+}
+}
+
+
+@media screen and (min-width: 1920px) {
+  /*
+ * ---MAIN UND SUB NAVIGATION / MAIN FIRST ---
+ */
+#mainNavi {
+  padding-top: 116px;
+  float: right;
+  font-size: 21px;
+  margin-right: 80px;
+  text-transform: uppercase;
+}
+
+#mainNavi div {
+  float: left;
+  margin-left: 80px;
+}
+
+
+#subNavi {
+  height: 45px;
+  opacity: 0;
+  width: 100%;
+  float: right;
+  font-size: 19px;
+  background: #0064ae;
+  padding-right: 77px;
+  margin-top: 21px;
+}
+
+#subNavi .subNavi {
+  opacity: 0;
+}
+
+#subNavi a {
+  color: white;
+  float: left;
+}
+
+#subNavi div {
+  padding: 1px 3px;
+  float: right;
+  margin-left: 78px;
+  margin-top: 7px;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+div#impressionen.ce_caroufredsel_start {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div#impressionen.ce_caroufredsel_start div.caroufredsel_wrapper img {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.carouWrapper {
+  width: 100%;
+}
+
+.carouWrapper a {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+.carouCenter {
+  background: #0064ae;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+
+.carouCenter a:nth-of-type(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+.caroufredsel_pagi a {
+  background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll transparent;
+  display: inline-block;
+  height: 30px;
+  margin: 7px 5px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: -999px;
+  width: 30px;
+}
+
+
+.caroufredsel_pagi a.selected {
+  background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll transparent;
+}
+
+
+div.mod_caroufredsel.block {
+  overflow: hidden !important;
+}
+
+
+.caroufredsel_controls {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+.caroufredsel_controls .caroufredsel_navi {
+  padding: 90px 0;
+  position: relative;
+  float: left;
+  left: -50%;
+}
+.caroufredsel_controls .caroufredsel_navi img {
+  display: block;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_pagi {
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_next {
+  margin-left: 80px;
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_prev {
+  margin-right: 80px;
+  float: left;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+/*
+ * --- DISABLES ---
+ */
+.ansehen, #SubHeader, .up, .down {
+  display: block;
+}
+
+
+.padding {
+  padding: 0 16.4%;
+}
+
+
+h3.imp {
+  font-size: 35pt;
+  margin: 20px 0 20px;
+  text-align: center;
+  font-weight: lighter;
+  color: #0064ae;
+}
+
+
+#bigFooter {
+  clear: both;
+}
+
+#bigFooter h3 {
+  font-size: 42pt;
+  text-align: center;
+  font-weight: 100;
+  color: #0064ae;
+  margin-top: 60px;
+}
+
+#bigFooter #social {
+  height: 346px;
+  margin: 0;
+  padding: 0;
+  background: url("/files/oc/images/socialBg.jpg") no-repeat;
+  background-position: 0 -27px;
+  background-size: 100% auto;
+}
+#bigFooter #social .BFsocialmedia {
+  padding-top: 50px;
+}
+#bigFooter #social .BFsocialmedia p {
+  padding-top: 10px;
+}
+#bigFooter #social .BFnavigation {
+  padding-top: 45px;
+}
+#bigFooter #social .BFnavigation p {
+  padding-top: 10px;
+}
+#bigFooter #social div h1 {
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  color: #0064ae;
+  font-weight: lighter;
+  font-size: 30px;
+}
+#bigFooter #social p {
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+#bigFooter #social p a, #bigFooter #social p a:active, #bigFooter #social p a:visited {
+  color: grey;
+  margin: 0 10px;
+  font-size: 19px;
+  font-weight: lighter;
+}
+#bigFooter #social p a:hover {
+  color: #0064ae;
+}
+#bigFooter #social #copyright {
+  font-weight: 100;
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: 0;
+  font-size: 19px;
+  color: grey;
+}
+
+#bigFooter #blueFooter {
+  background: #0064ae;
+  height: 91px;
+  text-transform: uppercase;
+}
+#bigFooter #blueFooter .left {
+  padding: 35px 0 35px 160px;
+  float: left;
+}
+#bigFooter #blueFooter .right {
+  padding: 35px 160px 35px 0;
+  float: right;
+}
+#bigFooter #blueFooter a, #bigFooter #blueFooter a:active, #bigFooter #blueFooter a:visited {
+  color: white !important;
+  margin: 0 5px;
+}
+#bigFooter #blueFooter a:after {
+  content: '\0000a0\ \0000a0\ .';
+}
+#bigFooter #blueFooter a:last-child:after {
+  content: " ";
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+.mod_article .ce_text h1 {
+  color: #0064ae;
+  font-weight: 100;
+}
+
+
+.blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+  color: #0064ae;
+}
+
+
+.mod_article {
+  padding: 0 16.4% 0;
+}
+
+
+div>.ce_text:nth-of-type(4n+1) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(4n+1) p {
+  font-size: 21px;
+  width: 45%;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(odd) {
+  float: left;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(even) {
+  float: right;
+}
+
+
+div>.ce_text:nth-of-type(3n+3) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(3n+3) p {
+  font-size: 21px;
+  width: 584px;
+}
+
+div>.ce_text:nth-of-type(3n+3) p:nth-child(odd) {
+  float: right;
+}
+
+
+
+/*
+ * ----------------------------------------------------
+ */
+/*
+ * ----------------------------------------------------
+ */
+/*
+ * .mod_article {
+ * font-size: 21px;
+ * .imglinks {
+ * min-height: 440px;
+ * padding-top: 35px;
+ * .text {
+ * width: 584px;
+ * float: right;
+ * font-size: inherit;
+ * }
+ * .bild {
+ * margin: 0;
+ * padding: 0;
+ * }
+ * img {
+ * float: left;
+ * }
+ * }
+ * .imgrechts {
+ * min-height: 440px;
+ * padding-top: 35px;
+ * .text {
+ * 
+ * width: 584px;
+ * float: left;
+ * font-size: 21px;
+ * .blueTopic {
+ * font-size: 29px;
+ * float: none !important;
+ * width: 520px;
+ * }
+ * }
+ * .bild {
+ * margin: 0;
+ * padding: 0;
+ * }
+ * img {
+ * float: right;
+ * }
+ * }
+ * 
+ * padding: 0 16.4% 0;
+ * }
+ */
+#philosophie:after {
+  clear: both;
+}
+
+
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * ---| Impressionen |---
+ */
+#Impressionen .mod_article {
+  padding: 0;
+}
+
+
+.cslide_elem .image_container img {
+  width: 100%;
+}
+
+
+#bigFooter div#home.mod_article {
+  padding: 0;
+}
+
+
+/*
+ * ---| Impressionen |---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+.uphover, .downhover {
+  cursor: pointer;
+}
+
+
+.up, .down {
+  padding: 20px 0;
+}
+
+.up .ll, .down .ll {
+  margin-top: 12px;
+  float: left;
+  width: 45%;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+.up .button, .down .button {
+  width: 80px;
+  margin: 0 auto;
+}
+.up .button a img, .down .button a img {
+  margin: 0 auto;
+  display: block;
+}
+
+.up .lr, .down .lr {
+  margin-top: -14px;
+  width: 45%;
+  float: right;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+
+#Logog {
+  display: block;
+  height: 135px;
+  float: left;
+  width: auto;
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 25px;
+}
+
+
+#Logo {
+  display: none;
+}
+
+
+#SubHeader .s_input {
+  background: url("/files/oc/images/startseite_frauen.jpg") no-repeat;
+  background-size: center -60px;
+  max-height: 620px;
+  width: auto;
+  height: 620px;
+}
+
+#SubHeader .s_title {
+  font-size: 48px;
+  color: #0064ae;
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#SubHeader .s_text {
+  padding-top: 9px;
+  font-size: 24px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#bubble {
+  width: 625px;
+  height: 315px;
+  margin: auto;
+}
+
+#bubble p {
+  opacity: 1;
+  color: #0064ae;
+  text-align: center;
+  font-size: 53px;
+  padding-top: 33%;
+}
+
+
+#rButton {
+  cursor: pointer;
+  display: block;
+  width: 270px;
+  margin: 75px auto 0;
+  color: white;
+}
+
+#rButton img {
+  display: block;
+  float: left;
+}
+
+#rButton span {
+  letter-spacing: 1px;
+  margin: 10px 0 0 10px;
+  font-size: 21px;
+  padding: 0;
+  display: block;
+  float: left;
+}
+
+
+#topTopic {
+  display: none;
+}
+
+
+#NavLink {
+  display: none;
+}
+
+
+.block {
+  overflow: visible !important;
+}
+
+
+#container, .inside {
+  position: static;
+}
+
+
+.col {
+  padding: 0;
+}
+
+
+header#header {
+  height: 130px;
+}
+
+
+img#Logo {
+  height: 40px;
+}
+
+
+#nav_horizontal {
+  display: block;
+}
+
+
+nav#nav_horizontal.mod_navigation ul.level_1 {
+  padding-right: 50px;
+  position: relative;
+  top: 35px;
+}
+nav#nav_horizontal.mod_navigation ul.level_1 li {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+
+.ansehen {
+  margin: 0 auto;
+  position: relative;
+  width: 163px;
+}
+
+.ansehen a {
+  width: 161px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.ansehen .text {
+  width: 80px;
+  left: 300px;
+  position: absolute;
+  top: 10px;
+}
+.ansehen .text span {
+  color: white;
+  font-size: 21px;
+}
+
+
+#promo .inner {
+  padding: 24px 16.4% 0;
+}
+#promo .inner .bbcontainer {
+  border-bottom: 1px solid #d4d4d4;
+}
+#promo .inner .promoBox {
+  margin: 0 auto;
+  width: 910px;
+  padding: 2px 0 20px 0;
+}
+#promo .inner .promoBox .promoTitel {
+  text-align: center;
+  font-size: 35pt;
+}
+#promo .inner .promoBox .promoText {
+  display: block;
+  font-size: 23pt;
+  padding: 10px 0 25px 0;
+  text-align: center;
+}
+
+
+
+
+#loginBox div.mod_login form#tl_logout div.formbody p.login_info {
+  color: white;
+}
+
+
+#loginBox {
+  padding: 20px;
+  display: none;
+  position: absolute;
+  background: rgba(0, 100, 174, 0.8);
+  margin-left: 1471px;
+  margin-top: -190px;
+  border-radius: 10px;
+  height: 160px;
+  width: 330px;
+}
+
+#loginBox a, #loginBox a:active, #loginBox a:visited {
+  color: white;
+}
+
+#loginBox a:hover {
+  text-decoration: underline;
+}
+
+#loginBox label {
+  color: white;
+}
+
+#loginBox input {
+  color: black;
+}
+
+#loginBox label[type=password] {
+  margin-top: 10px;
+}
+
+#loginBox .submit_container {
+  float: left;
+  margin-top: 70px;
+}
+
+#loginBox div.formbody label {
+  margin-top: 10px;
+}
+
+#loginBox input {
+  float: right;
+}
+}
+
+

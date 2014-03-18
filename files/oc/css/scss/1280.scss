@@ -1,0 +1,626 @@
+@media screen and (min-width:1280px) and (max-width: 1919px)  {
+
+  /* ---MAIN UND SUB NAVIGATION / MAIN FIRST --- */
+
+  #mainNavi {
+    padding-top: 116px;
+    float: right;
+    font-size: 21px;
+    margin-right: 80px;
+    text-transform: uppercase;
+    div {
+      float: left;
+      margin-left: 60px;
+    }
+  }
+  #subNavi {
+    //todo immer auf main.js verweisen und überprüfen
+    height: 45px;
+    opacity: 0;
+    width: 100%;
+    float: right;
+    font-size: 19px;
+    background: #0064AE;
+    padding-right: 77px;
+    margin-top: 21px;
+    .subNavi {
+      opacity: 0;
+    }
+    a {
+      color: white;
+      float: left;
+    }
+    div {
+      //todo cheffe fragen ->  border: white 1px solid;
+      padding: 1px 3px;
+      float: right;
+      margin-left: 78px;
+      margin-top: 7px;
+    }
+  }
+  /* --- caroufredsel --- */
+  div#impressionen.ce_caroufredsel_start {
+    margin: 0 !important;
+    padding: 0 !important;
+    div.caroufredsel_wrapper {
+      img {
+        display: block;
+        margin: 0 auto;
+        float: left;
+      }
+    }
+  }
+  .carouWrapper {
+    width: 100%;
+    a {
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      float: left;
+    }
+  }
+  .carouCenter {
+    background: #0064AE;
+    max-width: 1680px;
+    margin: 0 auto;
+  }
+  .carouCenter a:nth-of-type(2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+  .caroufredsel_pagi a {
+    //todo HOVER
+    background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll rgba(0, 0, 0, 0);
+    //   background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll -2px -32px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 30px;
+    margin: 7px 5px 0 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: -999px;
+    width: 30px;
+  }
+  .caroufredsel_pagi a.selected {
+    //todo hover active
+    background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll rgba(0, 0, 0, 0);
+  }
+  div.mod_caroufredsel.block {
+    // Overflow hidden für den social bereich
+    overflow: hidden !important;
+  }
+  .caroufredsel_controls {
+    position: relative;
+    float: left;
+    left: 50%;
+    .caroufredsel_navi {
+      padding: 90px 0;
+      position: relative;
+      float: left;
+      left: -50%;
+      img {
+        display: block;
+      }
+      .caroufredsel_pagi {
+        float: left;
+      }
+      .caroufredsel_next {
+        margin-left: 80px;
+        float: left;
+      }
+      .caroufredsel_prev {
+        margin-right: 80px;
+        float: left;
+      }
+    }
+  }
+  /* --- caroufredsel --- */
+  /* ---|Display Static Aktivierungen|--- */
+  /* --- DISABLES --- */
+  .ansehen,
+  #SubHeader,
+  .up, .down {
+    display: block;
+
+  }
+  .padding {
+    padding: 0 16.4%;
+  }
+  h3.imp {
+    //font-family: "RotisIISansW01-ExtraLt";c
+    font-size: 35pt;
+    margin: 20px 0 20px;
+    text-align: center;
+    font-weight: lighter;
+    color: #0064AE;
+  }
+  #bigFooter {
+    h3 {
+      //font-family: "RotisIISansW01-ExtraLt";c
+      font-size: 42pt;
+      text-align: center;
+      font-weight: 100;
+      color: #0064AE;
+      margin-top: 60px;
+    }
+    #social {
+      height: 346px;
+      margin: 0;
+      padding: 0;
+      background: url("/files/oc/images/socialBg.jpg") no-repeat;
+      background-position: 0 -27px;
+      background-size: 100% auto;
+      .BFsocialmedia {
+        padding-top: 50px;
+        p {
+          padding-top: 10px;
+        }
+      }
+      .BFnavigation {
+        padding-top: 45px;
+        p {
+          padding-top: 10px;
+        }
+      }
+      div h1 {
+        text-transform: uppercase;
+        margin: 0;
+        text-align: center;
+        color: #0064AE;
+        font-weight: lighter;
+        font-size: 30px;
+      }
+      p {
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+        a, a:active, a:visited {
+          color: #808080;
+          margin: 0 10px;
+          font-size: 19px;
+          font-weight: lighter;
+        }
+        a:hover {
+          color: #0064AE;
+        }
+      }
+      #copyright {
+        font-weight: 100;
+        padding-top: 55px;
+        text-align: center;
+        text-transform: uppercase;
+        bottom: 0;
+        font-size: 19px;
+        color: #808080;
+      }
+    }
+
+    #blueFooter {
+      background: #0064AE;
+      height: 91px;
+      text-transform: uppercase;
+
+      .left {
+        padding: 35px 0 35px 160px;
+        float: left;
+      }
+      .right {
+        padding: 35px 160px 35px 0;
+        float: right;
+      }
+      a, a:active, a:visited {
+        color: white !important;
+        margin: 0 5px;
+      }
+
+      a:after {
+        content: '\0000a0\ \0000a0\ .';
+        //leerzeichen escaped
+      }
+      a:last-child:after {
+        //entfernen des Punktes bei den letzten link !!!
+        content: " ";
+        //Leerzeichen muss drin sein, kein nbps
+      }
+    }
+    clear: both;
+  }
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  /* --- DISABLES --- */
+  /* ---|2 spalten layout  Rich Text Editor|--- */
+  /*
+  BILD LINKS TEXT RECHTS FERTIG
+  #philosophie.mod_article div.ce_text{
+  height:1600px;
+  float:left;
+  }
+  #philosophie {
+  padding:115px 14% 0;
+  .text{
+  width:500px;//TextBaustein -> Breite
+  float:right;
+  .blueTopic {
+  float: none !important;
+  width:500px;//Headline -> Breite
+  }
+  }
+  .bild{
+  margin:0;
+  padding:0;
+  }
+
+  img{
+  float:left;
+  }
+  }
+  */
+  /* MOD UND CE ALLGEMEINEINTRÄGE GENERELL */
+  .mod_article {
+    .ce_text {
+
+      h1 {
+        color: #0064AE;
+        font-weight: 100;
+      }
+      p {
+
+      }
+      .ce_img {
+
+      }
+    }
+  }
+  /* MOD UND CE ALLGEMEINEINTRÄGE GENERELL */
+  .blueTopic {
+    font-size: 29px;
+    float: none !important;
+    width: 520px;
+    color: #0064AE;
+    //Headline -> Breite
+  }
+  /*#philosophie.mod_article div.ce_text {
+    height: 1600px;
+    float: left;
+  }*/
+
+  /*---------------------------------------------------  TODO -*/
+  div>.ce_text:nth-of-type(4n+1){
+    min-height: 440px;
+    p {
+      font-size: 21px;
+
+      width: 45%;
+    }
+    p:nth-child(odd) {
+      float: left;
+    }
+    p:nth-child(even) {
+      float: right;
+    }
+  }
+  div>.ce_text:nth-of-type(3n+3){
+    min-height: 440px;
+    p {
+      font-size: 21px;
+      width: 45%;
+    }
+
+    p:nth-child(odd) {
+      float: right;
+    }
+    p:nth-child(even) {
+      // float: left;
+    }
+  }
+  div>.ce_text:nth-of-type(2n+1){ //alle textboxen including images
+  }
+  /*----------------------------------------------------*/
+  /*----------------------------------------------------*/
+
+  /*----------------------------------------------------*/
+  .mod_article {
+    font-size: 21px;
+    .imglinks {
+      min-height: 440px;
+      padding-top: 35px;
+      .text {
+        width: 390px;
+        float: right;
+        font-size: inherit;
+      }
+      .bild {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        float: left;
+      }
+    }
+    .imgrechts {
+      min-height: 440px;
+      padding-top: 35px;
+      img{width:390px;}
+      .text {
+
+        width: 390px;
+        float: left;
+        font-size: 21px;
+        .blueTopic {
+          font-size: 29px;
+          float: none !important;
+          width: 520px;
+        }
+      }
+      .bild {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        float: right;
+      }
+    }
+    //padding:115px 14% 0;
+    padding: 0 16.4% 0;
+  }
+  #philosophie:after {
+    clear: both;
+  }
+  /* ---|2 spalten layout  Rich Text Editor|--- */
+
+  /*---| Impressionen |---*/
+
+  #Impressionen {
+    .mod_article {
+      padding: 0;
+    }
+
+  }
+  .cslide_elem .image_container img {
+    width: 100%;
+  }
+  #bigFooter div#home.mod_article {
+    padding: 0;
+  }
+  /*---| Impressionen |---*/
+  /* ---|Display Static Aktivierungen|--- */
+  .uphover, .downhover {
+    cursor: pointer;
+  }
+  .up, .down {
+    padding: 20px 0;
+    .ll {
+      margin-top: 12px;
+      float: left;
+      width: 45%;
+      border: none;
+      border-top: 1px solid #D4D4D4;
+      height: 1px;
+    }
+    .button {
+      width: 80px;
+      margin: 0 auto;
+      a {
+        img {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+    .lr {
+      margin-top: -14px;
+      width: 45%;
+      float: right;
+      border: none;
+      border-top: 1px solid #D4D4D4;
+      height: 1px;
+    }
+  }
+  #Logog {
+    display: block;
+
+    height: 135px;
+    float: left;
+    width: auto;
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 25px;
+  }
+  #Logo {
+    display: none;
+  }
+  #SubHeader {
+    //margin-top: 80px;
+    //todo
+    .s_input {
+      background: url("/files/oc/images/startseite_frauen.jpg") no-repeat;
+      background-size:center -60px;
+      max-height: 620px;
+      width: auto;
+      height: 620px;
+    }
+    .s_title {
+      //padding-top: 70px;
+      font-size: 48px;
+      color: #0064AE;
+      width: 1300px;
+      margin: 0 auto;
+      text-align: center;
+
+    }
+    .s_text {
+      padding-top: 9px;
+      font-size: 24px;
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  #bubble {
+    //background: rgba(255, 255, 255, .5);
+    width: 625px;
+    height: 315px;
+    margin: auto;
+    p {
+      opacity: 1;
+      color: #0064AE;
+      text-align: center;
+      font-size: 53px;
+      padding-top: 10%;
+    }
+  }
+  #rButton {
+    cursor: pointer;
+    display: block;
+    width: 270px;
+    margin: 75px auto 0;
+    color: white;
+    img {
+      display: block;
+      float: left;
+    }
+    span {
+      letter-spacing: 1px;
+      margin: 10px 0 0 10px;
+      font-size: 21px;
+      padding: 0;
+      display: block;
+      float: left;
+    }
+  }
+  #topTopic {
+    display: none;
+  }
+  #NavLink {
+    display: none;
+  }
+  .block {
+    overflow: visible !important;
+  }
+  #container, .inside {
+    position: static
+  }
+  .col {
+    padding: 0;
+  }
+  header#header {
+    height: 130px;
+  }
+  img#Logo {
+    height: 40px;
+  }
+  #nav_horizontal {
+    display: block;
+  }
+
+  nav#nav_horizontal.mod_navigation {
+    ul.level_1 {
+      padding-right: 50px;
+      position: relative;
+      top: 35px;
+      li {
+        list-style-type: none;
+        padding-left: 50px;
+      }
+    }
+  }
+  .ansehen {
+    margin: 0 auto;
+    position: relative;
+    width: 163px;
+    a {
+      width: 161px;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+    .text {
+      width: 80px;
+      left: 300px;
+      position: absolute;
+      top: 10px;
+      span {
+        color: white;
+        font-size: 21px;
+      }
+    }
+  }
+  #promo {
+    .inner {
+      padding: 24px 16.4% 0;
+      .bbcontainer {
+        border-bottom: 1px solid #D4D4D4;
+      }
+      .promoBox {
+        margin: 0 auto;
+        width: 910px;
+        padding: 2px 0 20px 0;
+        .promoTitel {
+          text-align: center;
+          font-size: 35pt;
+        }
+        .promoText {
+          display: block;
+          font-size: 23pt;
+          padding: 10px 0 25px 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+  //Login formular
+  .mod_login {
+
+  }
+  .opacity {
+    // opacity: 0.5;       /* modern browser */
+    // -moz-opacity: 0.5;  /* older Mozilla browser */
+    // -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE8 in Standard Compliant Mode */
+    // filter:alpha(opacity=50); /* IE5.x -7.0 */
+  }
+  #loginBox div.mod_login form#tl_logout div.formbody p.login_info {
+    color: white;
+  }
+  #loginBox {
+    padding: 20px;
+    display: none;
+    position: absolute;
+    a, a:active, a:visited {
+      color: white;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    label {
+      color: white;
+    }
+    input {
+      color: black;
+    }
+    label[type=password] {
+      margin-top: 10px;
+    }
+    //background:   rgb(0, 100, 174, .1);
+    background: rgba(0, 100, 174, .8);
+    margin-left: 1471px;
+    margin-top: -190px;
+    border-radius: 10px;
+    height: 160px;
+    width: 330px;
+    .submit_container {
+      float: left;
+      margin-top: 70px;
+    }
+    div.formbody label {
+      margin-top: 10px;
+    }
+    input {
+      float: right;
+    }
+  }
+  button#login {
+
+  }
+}
+

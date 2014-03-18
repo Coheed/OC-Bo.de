@@ -1,0 +1,58 @@
+/* ESSENTIAL STYLES */
+
+
+.sf-menu ul
+{
+    width:10em;
+    top:-999em;
+    position:absolute;
+    margin-top: -32px !important;
+}
+.sf-menu ul li
+{
+    width:100%;
+}
+.sf-menu li:hover
+{
+    visibility: inherit;
+}
+.sf-menu li
+{
+    position:relative;
+    float:left;
+}
+.sf-menu a
+{
+    position:relative;
+    display:block;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul
+{
+    left:-10px;
+    top:10px;
+    z-index: 99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul
+{
+    top:-999em;
+}
+
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul
+{
+    left:10em;
+    top: 0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul
+{
+    top:-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul
+{
+    left:10em;
+    top: 0;
+}

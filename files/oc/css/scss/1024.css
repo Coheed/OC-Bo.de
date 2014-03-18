@@ -1,0 +1,592 @@
+@media screen and (min-width:1022px) and (max-width:1279px) {
+  #mainNavi {
+  padding-top: 66px;
+  float: right;
+  font-size: 21px;
+  margin-right: 25px;
+}
+
+#mainNavi div {
+  float: left;
+  margin-left: 20px;
+}
+
+
+#subNavi {
+  height: 40px;
+  width: 100%;
+  float: right;
+  font-size: 19px;
+  background: #0064ae;
+  padding-right: 27px;
+  margin-top: 38px;
+}
+
+#subNavi .subLink {
+  opacity: 0;
+}
+
+#subNavi a {
+  color: white;
+  float: left;
+}
+
+#subNavi div {
+  padding: 1px 3px;
+  float: right;
+  margin-left: 40px;
+  margin-top: 7px;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+div#impressionen.ce_caroufredsel_start {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div#impressionen.ce_caroufredsel_start div.caroufredsel_wrapper img {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.carouWrapper {
+  width: 100%;
+}
+
+.carouWrapper a {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+.carouCenter {
+  background: #0064ae;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+
+.carouCenter a:nth-of-type(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+.caroufredsel_pagi a {
+  background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll transparent;
+  display: inline-block;
+  height: 30px;
+  margin: 7px 5px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: -999px;
+  width: 30px;
+}
+
+
+.caroufredsel_pagi a.selected {
+  background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll transparent;
+}
+
+
+div.mod_caroufredsel.block {
+  overflow: hidden !important;
+}
+
+
+.caroufredsel_controls {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+.caroufredsel_controls .caroufredsel_navi {
+  padding: 90px 0;
+  position: relative;
+  float: left;
+  left: -50%;
+}
+.caroufredsel_controls .caroufredsel_navi img {
+  display: block;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_pagi {
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_next {
+  margin-left: 80px;
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_prev {
+  margin-right: 80px;
+  float: left;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+/*
+ * --- DISABLES ---
+ */
+.ansehen, #SubHeader, .up {
+  display: block;
+}
+
+
+#bigFooter {
+  clear: both;
+}
+
+#bigFooter h3 {
+  font-size: 42pt;
+  text-align: center;
+  font-weight: 100;
+  color: #0064ae;
+  margin-top: 60px;
+}
+
+#bigFooter #social {
+  height: 470px;
+  background: url("/files/oc/images/socialBg.jpg") no-repeat;
+  background-size: 100% auto;
+}
+#bigFooter #social h1 {
+  padding-top: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0064ae;
+  font-weight: bolder;
+  font-size: 40px;
+}
+#bigFooter #social p {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -20px;
+}
+#bigFooter #social p a, #bigFooter #social p a:active, #bigFooter #social p a:visited {
+  color: grey;
+  margin: 0 10px;
+  font-size: 19px;
+}
+#bigFooter #social #copyright {
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: grey;
+}
+
+#bigFooter #blueFooter {
+  background: #0064ae;
+  height: 91px;
+  text-transform: uppercase;
+}
+#bigFooter #blueFooter .left {
+  padding: 35px 0 35px 20px;
+  float: left;
+}
+#bigFooter #blueFooter .right {
+  padding: 35px 20px 35px 0;
+  float: right;
+}
+#bigFooter #blueFooter a, #bigFooter #blueFooter a:active, #bigFooter #blueFooter a:visited {
+  color: white;
+  margin: 0 5px;
+}
+#bigFooter #blueFooter a:after {
+  content: '\0000a0\ \0000a0\ .';
+}
+#bigFooter #blueFooter a:last-child:after {
+  content: " ";
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ * --- DISABLES ---
+ */
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * 
+ * BILD LINKS TEXT RECHTS FERTIG
+ * #philosophie.mod_article div.ce_text{
+ * height:1600px;
+ * float:left;
+ * }
+ * #philosophie {
+ * padding:115px 14% 0;
+ * .text{
+ * width:500px;//TextBaustein -> Breite
+ * float:right;
+ * .blueTopic {
+ * float: none !important;
+ * width:500px;//Headline -> Breite
+ * }
+ * }
+ * .bild{
+ * margin:0;
+ * padding:0;
+ * }
+ * 
+ * img{
+ * float:left;
+ * }
+ * }
+ */
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.mod_article .ce_text h1 {
+  color: #0064ae;
+  font-weight: 100;
+}
+
+
+/*
+ * MOD UND CE ALLGEMEINEINTRÄGE GENERELL
+ */
+.blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+  color: #0064ae;
+}
+
+
+#philosophie.mod_article div.ce_text {
+  height: 1600px;
+  float: left;
+}
+
+
+#philosophie, #praxis {
+  padding: 0 17% 0;
+}
+
+#philosophie .imglinks, #praxis .imglinks {
+  min-height: 350px;
+}
+#philosophie .imglinks .text, #praxis .imglinks .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imglinks .bild, #praxis .imglinks .bild {
+  margin: 0;
+  padding: 0;
+}
+
+#philosophie .imgrechts, #praxis .imgrechts {
+  min-height: 350px;
+}
+#philosophie .imgrechts .text, #praxis .imgrechts .text {
+  width: 520px;
+  font-size: 21px;
+}
+#philosophie .imgrechts .text .blueTopic, #praxis .imgrechts .text .blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+}
+#philosophie .imgrechts .bild, #praxis .imgrechts .bild {
+  margin: 0;
+  padding: 0;
+}
+
+
+#philosophie:after {
+  clear: both;
+}
+
+
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * ---| Impressionen |---
+ */
+div.cslide_elem div.ce_text p img {
+  display: block;
+  float: left;
+}
+
+
+div.cslide_elem div.ce_text p img {
+  float: left;
+  width: 559px;
+  max-width: 559px;
+}
+
+
+/*
+ * ---| Impressionen |---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+.up {
+  padding: 20px 6% 20px 6%;
+}
+
+.up .ll {
+  margin-top: 12px;
+  float: left;
+  width: 45%;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+.up .button {
+  width: 45px;
+  margin: 0 auto;
+}
+.up .button a img {
+  margin: 0 auto;
+  display: block;
+}
+
+.up .lr {
+  margin-top: -14px;
+  width: 45%;
+  float: right;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+
+#Logog {
+  display: block;
+  height: 90px;
+  padding: 15px 0 0 35px;
+  float: left;
+  width: auto;
+  margin: 0;
+}
+
+
+#Logo {
+  display: none;
+}
+
+
+#SubHeader .s_input {
+  background: url("/files/oc/images/startseite_frauen.jpg") no-repeat scroll right top / 100% auto white;
+  height: 1036px;
+  max-height: 100%;
+  width: auto;
+}
+
+#SubHeader .s_title {
+  padding-top: 70px;
+  font-size: 48px;
+  color: #0064ae;
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#SubHeader .s_text {
+  padding-top: 70px;
+  font-size: 24px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#bubble {
+  width: 625px;
+  height: 315px;
+  margin: auto;
+}
+
+#bubble p {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 53px;
+  float: left;
+  margin-top: 32%;
+}
+
+
+#rButton {
+  display: block;
+  width: 270px;
+  margin: 15px auto 0;
+  color: white;
+}
+
+#rButton img {
+  display: block;
+  float: left;
+}
+
+#rButton span {
+  letter-spacing: 1px;
+  margin: 10px 0 0 0;
+  font-size: 21px;
+  padding: 0;
+  width: 172px;
+  display: block;
+  float: left;
+}
+
+
+#topTopic {
+  display: none;
+}
+
+
+#NavLink {
+  display: none;
+}
+
+
+.block {
+  overflow: visible !important;
+}
+
+
+#container, .inside {
+  position: static;
+}
+
+
+.col {
+  padding: 0;
+}
+
+
+header#header {
+  height: 130px;
+}
+
+
+img#Logo {
+  height: 40px;
+}
+
+
+#nav_horizontal {
+  display: block;
+}
+
+
+nav#nav_horizontal.mod_navigation ul.level_1 {
+  padding-right: 50px;
+  position: relative;
+  top: 35px;
+}
+nav#nav_horizontal.mod_navigation ul.level_1 li {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+
+.ansehen {
+  margin: 0 auto;
+  position: relative;
+  width: 163px;
+}
+
+.ansehen a {
+  width: 161px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.ansehen .text {
+  width: 80px;
+  left: 300px;
+  position: absolute;
+  top: 10px;
+}
+.ansehen .text span {
+  color: white;
+  font-size: 21px;
+}
+
+
+#promo .inner .bbcontainer {
+  border-bottom: 1px solid #d4d4d4;
+}
+#promo .inner .promoBox {
+  margin: 0 auto;
+  width: 690px;
+  padding-bottom: 80px;
+  padding-top: 70px;
+}
+#promo .inner .promoBox .promoTitel {
+  text-align: center;
+  font-size: 42pt;
+}
+#promo .inner .promoBox .promoText {
+  display: block;
+  font-size: 38pt;
+  padding: 40px 0 25px 0;
+  text-align: center;
+}
+
+
+/*
+ * ---------------------------------------------------  TODO -
+ */
+div>.ce_text:nth-of-type(4n+1) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(4n+1) p {
+  font-size: 21px;
+  width: 584px;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(odd) {
+  float: left;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(even) {
+  float: right;
+}
+
+
+div>.ce_text:nth-of-type(3n+3) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(3n+3) p {
+  font-size: 21px;
+  width: 584px;
+}
+
+div>.ce_text:nth-of-type(3n+3) p:nth-child(odd) {
+  float: right;
+}
+
+
+
+/*
+ * ----------------------------------------------------
+ */
+}
+
+

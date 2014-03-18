@@ -1,0 +1,663 @@
+@media screen and (min-width: 1920px) {
+  /*
+ * ---MAIN UND SUB NAVIGATION / MAIN FIRST ---
+ */
+#mainNavi {
+  padding-top: 116px;
+  float: right;
+  font-size: 21px;
+  margin-right: 80px;
+  text-transform: uppercase;
+}
+
+#mainNavi div {
+  float: left;
+  margin-left: 80px;
+}
+
+
+#subNavi {
+  height: 45px;
+  opacity: 0;
+  width: 100%;
+  float: right;
+  font-size: 19px;
+  background: #0064ae;
+  padding-right: 77px;
+  margin-top: 21px;
+}
+
+#subNavi .subNavi {
+  opacity: 0;
+}
+
+#subNavi a {
+  color: white;
+  float: left;
+}
+
+#subNavi div {
+  padding: 1px 3px;
+  float: right;
+  margin-left: 78px;
+  margin-top: 7px;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+div#impressionen.ce_caroufredsel_start {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div#impressionen.ce_caroufredsel_start div.caroufredsel_wrapper img {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.carouWrapper {
+  width: 100%;
+}
+
+.carouWrapper a {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+
+.carouCenter {
+  background: #0064ae;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+
+.carouCenter a:nth-of-type(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+.caroufredsel_pagi a {
+  background: url("/files/oc/images/paginationDefault.jpg") no-repeat scroll transparent;
+  display: inline-block;
+  height: 30px;
+  margin: 7px 5px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: -999px;
+  width: 30px;
+}
+
+
+.caroufredsel_pagi a.selected {
+  background: url("/files/oc/images/paginationActive.jpg") no-repeat scroll transparent;
+}
+
+
+div.mod_caroufredsel.block {
+  overflow: hidden !important;
+}
+
+
+.caroufredsel_controls {
+  position: relative;
+  float: left;
+  left: 50%;
+}
+
+.caroufredsel_controls .caroufredsel_navi {
+  padding: 90px 0;
+  position: relative;
+  float: left;
+  left: -50%;
+}
+.caroufredsel_controls .caroufredsel_navi img {
+  display: block;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_pagi {
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_next {
+  margin-left: 80px;
+  float: left;
+}
+.caroufredsel_controls .caroufredsel_navi .caroufredsel_prev {
+  margin-right: 80px;
+  float: left;
+}
+
+
+/*
+ * --- caroufredsel ---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+/*
+ * --- DISABLES ---
+ */
+.ansehen, #SubHeader, .up, .down {
+  display: block;
+}
+
+
+.padding {
+  padding: 0 16.4%;
+}
+
+
+h3.imp {
+  font-size: 35pt;
+  margin: 20px 0 20px;
+  text-align: center;
+  font-weight: lighter;
+  color: #0064ae;
+}
+
+
+#bigFooter {
+  clear: both;
+}
+
+#bigFooter h3 {
+  font-size: 42pt;
+  text-align: center;
+  font-weight: 100;
+  color: #0064ae;
+  margin-top: 60px;
+}
+
+#bigFooter #social {
+  height: 346px;
+  margin: 0;
+  padding: 0;
+  background: url("/files/oc/images/socialBg.jpg") no-repeat;
+  background-position: 0 -27px;
+  background-size: 100% auto;
+}
+#bigFooter #social .BFsocialmedia {
+  padding-top: 50px;
+}
+#bigFooter #social .BFsocialmedia p {
+  padding-top: 10px;
+}
+#bigFooter #social .BFnavigation {
+  padding-top: 45px;
+}
+#bigFooter #social .BFnavigation p {
+  padding-top: 10px;
+}
+#bigFooter #social div h1 {
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  color: #0064ae;
+  font-weight: lighter;
+  font-size: 30px;
+}
+#bigFooter #social p {
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+#bigFooter #social p a, #bigFooter #social p a:active, #bigFooter #social p a:visited {
+  color: grey;
+  margin: 0 10px;
+  font-size: 19px;
+  font-weight: lighter;
+}
+#bigFooter #social p a:hover {
+  color: #0064ae;
+}
+#bigFooter #social #copyright {
+  font-weight: 100;
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: 0;
+  font-size: 19px;
+  color: grey;
+}
+
+#bigFooter #blueFooter {
+  background: #0064ae;
+  height: 91px;
+  text-transform: uppercase;
+}
+#bigFooter #blueFooter .left {
+  padding: 35px 0 35px 160px;
+  float: left;
+}
+#bigFooter #blueFooter .right {
+  padding: 35px 160px 35px 0;
+  float: right;
+}
+#bigFooter #blueFooter a, #bigFooter #blueFooter a:active, #bigFooter #blueFooter a:visited {
+  color: white !important;
+  margin: 0 5px;
+}
+#bigFooter #blueFooter a:after {
+  content: '\0000a0\ \0000a0\ .';
+}
+#bigFooter #blueFooter a:last-child:after {
+  content: " ";
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+.mod_article .ce_text h1 {
+  color: #0064ae;
+  font-weight: 100;
+}
+
+
+.blueTopic {
+  font-size: 29px;
+  float: none !important;
+  width: 520px;
+  color: #0064ae;
+}
+
+
+.mod_article {
+  padding: 0 16.4% 0;
+}
+
+
+div>.ce_text:nth-of-type(4n+1) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(4n+1) p {
+  font-size: 21px;
+  width: 45%;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(odd) {
+  float: left;
+}
+
+div>.ce_text:nth-of-type(4n+1) p:nth-child(even) {
+  float: right;
+}
+
+
+div>.ce_text:nth-of-type(3n+3) {
+  min-height: 440px;
+}
+
+div>.ce_text:nth-of-type(3n+3) p {
+  font-size: 21px;
+  width: 584px;
+}
+
+div>.ce_text:nth-of-type(3n+3) p:nth-child(odd) {
+  float: right;
+}
+
+
+
+/*
+ * ----------------------------------------------------
+ */
+/*
+ * ----------------------------------------------------
+ */
+/*
+ * .mod_article {
+ * font-size: 21px;
+ * .imglinks {
+ * min-height: 440px;
+ * padding-top: 35px;
+ * .text {
+ * width: 584px;
+ * float: right;
+ * font-size: inherit;
+ * }
+ * .bild {
+ * margin: 0;
+ * padding: 0;
+ * }
+ * img {
+ * float: left;
+ * }
+ * }
+ * .imgrechts {
+ * min-height: 440px;
+ * padding-top: 35px;
+ * .text {
+ * 
+ * width: 584px;
+ * float: left;
+ * font-size: 21px;
+ * .blueTopic {
+ * font-size: 29px;
+ * float: none !important;
+ * width: 520px;
+ * }
+ * }
+ * .bild {
+ * margin: 0;
+ * padding: 0;
+ * }
+ * img {
+ * float: right;
+ * }
+ * }
+ * 
+ * padding: 0 16.4% 0;
+ * }
+ */
+#philosophie:after {
+  clear: both;
+}
+
+
+/*
+ * ---|2 spalten layout  Rich Text Editor|---
+ */
+/*
+ * ---| Impressionen |---
+ */
+#Impressionen .mod_article {
+  padding: 0;
+}
+
+
+.cslide_elem .image_container img {
+  width: 100%;
+}
+
+
+#bigFooter div#home.mod_article {
+  padding: 0;
+}
+
+
+/*
+ * ---| Impressionen |---
+ */
+/*
+ * ---|Display Static Aktivierungen|---
+ */
+.uphover, .downhover {
+  cursor: pointer;
+}
+
+
+.up, .down {
+  padding: 20px 0;
+}
+
+.up .ll, .down .ll {
+  margin-top: 12px;
+  float: left;
+  width: 45%;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+.up .button, .down .button {
+  width: 80px;
+  margin: 0 auto;
+}
+.up .button a img, .down .button a img {
+  margin: 0 auto;
+  display: block;
+}
+
+.up .lr, .down .lr {
+  margin-top: -14px;
+  width: 45%;
+  float: right;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  height: 1px;
+}
+
+
+#Logog {
+  display: block;
+  height: 135px;
+  float: left;
+  width: auto;
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 25px;
+}
+
+
+#Logo {
+  display: none;
+}
+
+
+#SubHeader .s_input {
+  background: url("/files/oc/images/startseite_frauen.jpg") no-repeat;
+  background-size: center -60px;
+  max-height: 620px;
+  width: auto;
+  height: 620px;
+}
+
+#SubHeader .s_title {
+  font-size: 48px;
+  color: #0064ae;
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#SubHeader .s_text {
+  padding-top: 9px;
+  font-size: 24px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#bubble {
+  width: 625px;
+  height: 315px;
+  margin: auto;
+}
+
+#bubble p {
+  opacity: 1;
+  color: #0064ae;
+  text-align: center;
+  font-size: 53px;
+  padding-top: 33%;
+}
+
+
+#rButton {
+  cursor: pointer;
+  display: block;
+  width: 270px;
+  margin: 75px auto 0;
+  color: white;
+}
+
+#rButton img {
+  display: block;
+  float: left;
+}
+
+#rButton span {
+  letter-spacing: 1px;
+  margin: 10px 0 0 10px;
+  font-size: 21px;
+  padding: 0;
+  display: block;
+  float: left;
+}
+
+
+#topTopic {
+  display: none;
+}
+
+
+#NavLink {
+  display: none;
+}
+
+
+.block {
+  overflow: visible !important;
+}
+
+
+#container, .inside {
+  position: static;
+}
+
+
+.col {
+  padding: 0;
+}
+
+
+header#header {
+  height: 130px;
+}
+
+
+img#Logo {
+  height: 40px;
+}
+
+
+#nav_horizontal {
+  display: block;
+}
+
+
+nav#nav_horizontal.mod_navigation ul.level_1 {
+  padding-right: 50px;
+  position: relative;
+  top: 35px;
+}
+nav#nav_horizontal.mod_navigation ul.level_1 li {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+
+.ansehen {
+  margin: 0 auto;
+  position: relative;
+  width: 163px;
+}
+
+.ansehen a {
+  width: 161px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.ansehen .text {
+  width: 80px;
+  left: 300px;
+  position: absolute;
+  top: 10px;
+}
+.ansehen .text span {
+  color: white;
+  font-size: 21px;
+}
+
+
+#promo .inner {
+  padding: 24px 16.4% 0;
+}
+#promo .inner .bbcontainer {
+  border-bottom: 1px solid #d4d4d4;
+}
+#promo .inner .promoBox {
+  margin: 0 auto;
+  width: 910px;
+  padding: 2px 0 20px 0;
+}
+#promo .inner .promoBox .promoTitel {
+  text-align: center;
+  font-size: 35pt;
+}
+#promo .inner .promoBox .promoText {
+  display: block;
+  font-size: 23pt;
+  padding: 10px 0 25px 0;
+  text-align: center;
+}
+
+
+
+
+#loginBox div.mod_login form#tl_logout div.formbody p.login_info {
+  color: white;
+}
+
+
+#loginBox {
+  padding: 20px;
+  display: none;
+  position: absolute;
+  background: rgba(0, 100, 174, 0.8);
+  margin-left: 1471px;
+  margin-top: -190px;
+  border-radius: 10px;
+  height: 160px;
+  width: 330px;
+}
+
+#loginBox a, #loginBox a:active, #loginBox a:visited {
+  color: white;
+}
+
+#loginBox a:hover {
+  text-decoration: underline;
+}
+
+#loginBox label {
+  color: white;
+}
+
+#loginBox input {
+  color: black;
+}
+
+#loginBox label[type=password] {
+  margin-top: 10px;
+}
+
+#loginBox .submit_container {
+  float: left;
+  margin-top: 70px;
+}
+
+#loginBox div.formbody label {
+  margin-top: 10px;
+}
+
+#loginBox input {
+  float: right;
+}
+}
+
+

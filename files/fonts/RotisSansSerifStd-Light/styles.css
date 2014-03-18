@@ -1,0 +1,9 @@
+
+@font-face {
+	font-family: 'RotisSansSerifStd-Light';
+	src: url('RotisSansSerifStd-Light.eot?') format('eot'), 
+	     url('RotisSansSerifStd-Light.otf')  format('opentype'),
+	     url('RotisSansSerifStd-Light.woff') format('woff'), 
+	     url('RotisSansSerifStd-Light.ttf')  format('truetype'),
+	     url('RotisSansSerifStd-Light.svg#RotisSansSerifStd-Light') format('svg');
+}

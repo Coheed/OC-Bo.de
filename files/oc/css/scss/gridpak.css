@@ -1,0 +1,472 @@
+html {
+  font-family: 'Rotis II Sans W01 Light';
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  color: grey;
+  text-rendering: optimizelegibility;
+}
+
+
+html h1 {
+  font-size: 25px;
+}
+
+html a, html a:active, html a:visited {
+  color: #0064ae;
+  text-decoration: none;
+}
+
+
+/*
+ * Reusable column setup
+ */
+/*
+ * Info:FürMobile zentrierung .col benutzen
+ */
+.col {
+  border: 0px solid transparent;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+
+
+/*
+ * --- Gridpak variables ---
+ */
+.row .col:first-child {
+  margin-left: 0;
+}
+
+
+.span_1 {
+  margin-left: 0;
+  width: 100%;
+}
+
+
+.col {
+  padding: 0 3%;
+  width: 100%;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  /*
+ * --- extras  ---
+ */
+#container {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+
+#SubHeader {
+  margin-top: 36px;
+}
+
+
+.bborder {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+
+#Logo {
+  height: 37px;
+}
+
+
+header#header {
+  height: 40px;
+  z-index: 1;
+  background: white;
+  position: fixed;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+
+
+#NavLink {
+  background-image: url("/core/files/oc/images/icon_nav.png");
+  background-repeat: no-repeat;
+  background-size: 29px 59px;
+  display: inline-block;
+  height: 21px;
+  margin-top: 10px;
+  position: absolute;
+  right: 0;
+  width: 29px;
+}
+
+
+.ce_text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ce_text h1 {
+  color: #0064ae;
+  font-size: 29px;
+  font-weight: bold;
+  margin: 10px 0 0 5%;
+  padding: 0 5% 0 0;
+}
+
+.ce_text p {
+  display: block;
+  margin: 10px 0 0 5%;
+  padding: 0 5% 0 0;
+}
+
+
+
+a#NavLink {
+  float: right;
+  right: 0;
+  text-indent: -999px;
+}
+
+
+/*
+ * c33l  & c33r
+ */
+.c33l, .c33r {
+  width: 90%;
+  margin: 0 auto !important;
+  float: none;
+}
+
+
+/*
+ * SubHeader
+ */
+div.s_input img {
+  display: block;
+}
+
+
+div#SubHeader div.right img {
+  display: block;
+}
+
+
+#SubHeader:after {
+  content: "";
+  clear: both;
+}
+
+
+#SubHeader {
+  height: 100%;
+  width: auto;
+}
+
+#SubHeader .s_title {
+  font-size: 100%;
+}
+
+#SubHeader .s_input {
+  position: relative;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#SubHeader .right {
+  width: auto;
+  position: relative;
+  height: auto;
+}
+
+#SubHeader .left {
+  display: none;
+  float: left;
+  width: 48%;
+  padding-top: 1%;
+}
+
+#SubHeader img {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+
+/*
+ * Promo
+ */
+.inner {
+  /*
+ * center
+ */
+
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.inner .tborder {
+  border-top: 1px solid #d4d4d4;
+}
+
+.inner .promoBox {
+  margin-top: 10px;
+  padding: 15px 0 15px 0;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  position: relative;
+  width: 200px;
+  height: 54px;
+}
+.inner .promoBox .right-arrow {
+  font-size: 110%;
+  font-style: normal;
+  margin-left: 3px;
+}
+.inner .promoBox .promoText {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: normal;
+}
+.inner .promoBox .promoTitel {
+  font-size: 29px;
+}
+
+
+/*
+ * --- Footer ---
+ */
+#footer {
+  float: left;
+  bottom: 0%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+}
+
+#footer .fb img {
+  display: block;
+  float: left;
+}
+
+
+/*
+ * --- extras  ---
+ */
+}
+
+
+/*
+ * --------------------------------------------------------------------------------------
+ */
+@media screen and (min-width: 321px) and (max-width: 760px) {
+  /*
+ * --- extras  ---
+ */
+#container {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+
+#SubHeader {
+  margin-top: 36px;
+}
+
+
+.bborder {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+
+#Logo {
+  height: 37px;
+}
+
+
+header#header {
+  height: 40px;
+  z-index: 1;
+  background: white;
+  position: fixed;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+
+
+#NavLink {
+  background-image: url("/core/files/oc/images/icon_nav.png");
+  background-repeat: no-repeat;
+  background-size: 29px 59px;
+  display: inline-block;
+  height: 21px;
+  margin-top: 10px;
+  position: absolute;
+  right: 0;
+  width: 29px;
+}
+
+
+.ce_text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ce_text h1 {
+  color: #0064ae;
+  font-size: 29px;
+  font-weight: bold;
+  margin: 10px 0 0 5%;
+  padding: 0 5% 0 0;
+}
+
+.ce_text p {
+  display: block;
+  margin: 10px 0 0 5%;
+  padding: 0 5% 0 0;
+}
+
+
+
+a#NavLink {
+  float: right;
+  right: 0;
+  text-indent: -999px;
+}
+
+
+/*
+ * c33l  & c33r
+ */
+.c33l, .c33r {
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+}
+
+
+/*
+ * SubHeader
+ */
+div.s_input img {
+  display: block;
+}
+
+
+div#SubHeader div.right img {
+  display: block;
+}
+
+
+#SubHeader:after {
+  content: "";
+  clear: both;
+}
+
+
+#SubHeader {
+  height: 100%;
+  width: auto;
+}
+
+#SubHeader .s_title {
+  font-size: 100%;
+}
+
+#SubHeader .s_input {
+  position: relative;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#SubHeader .right {
+  width: auto;
+  position: relative;
+  height: auto;
+}
+
+#SubHeader .left {
+  display: none;
+  float: left;
+  width: 48%;
+  padding-top: 1%;
+}
+
+#SubHeader img {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+
+/*
+ * Promo
+ */
+#promo .inner {
+  /*
+ * center
+ */
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  width: 550px;
+  margin-bottom: 40px;
+}
+#promo .inner .tborder {
+  border-top: 1px solid #d4d4d4;
+}
+#promo .inner .promoBox {
+  margin: 20px 37px;
+  float: left;
+  padding: 15px 0 15px 0;
+  width: 200px;
+  height: 54px;
+}
+#promo .inner .promoBox .right-arrow {
+  font-size: 110%;
+  font-style: normal;
+  margin-left: 3px;
+}
+#promo .inner .promoBox .promoText {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: normal;
+}
+#promo .inner .promoBox .promoTitel {
+  font-size: 20px;
+}
+
+
+/*
+ * --- Footer ---
+ */
+#footer {
+  float: left;
+  bottom: 0%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+}
+
+#footer .fb img {
+  display: block;
+  float: left;
+}
+
+
+/*
+ * --- extras  ---
+ */
+}
+
+

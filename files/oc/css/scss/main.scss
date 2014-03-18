@@ -1,0 +1,205 @@
+/* Gridsystem (col and spans(span_first)) */
+$max_columns: 1;
+$padding: 0 4%;
+$gutter_px: 0;
+$gutter_pc: 2%;
+$blue: "#0064AE";
+$grey: "#808080";
+
+#social{font-weight:bold !important} //todo ?? delete ? leave ?
+/* --- DISABLES --- */
+#blueFooter {
+  background: #0064AE !important;
+  height: 80px;
+  text-transform: uppercase;
+
+}
+.blue{color:#0064AE;}
+.ansehen{
+  display:none;
+}
+/* --- DISABLES --- */
+#Logog{
+  display:none;
+}
+#nav_horizontal{display:none;}
+.col {
+  //margin-left: 2%;
+  padding: 4%;
+
+  width: 100%;
+}
+.opacity{
+  opacity: 0.5;
+}
+@mixin col {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+.col {
+  @include col;
+}
+@mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
+  $one_col: (100% - ($gutter_pc * ($max_columns - 1))) / $max_columns;
+  width: ($one_col * $num) + ($gutter_pc * ($num - 1));
+  border-left-width: $gutter_px;
+  padding: $padding;
+  margin-left: $gutter_pc;
+}
+@mixin span_first {
+  margin-left: 0;
+}
+/* HTML & MAIN*/
+/*@font-face {
+  font-family: 'RotisSansSerifStd';
+  src: url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.eot?') format('eot'),
+  url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.otf')  format('opentype'),
+  url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.woff') format('woff'),
+  url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.ttf')  format('truetype'),
+  url('/files/fonts/RotisSansSerifStd/RotisSansSerifStd.svg#RotisSansSerifStd') format('svg');
+}*/
+@font-face {
+  font-family: 'RotisSansSerifStd-Light';
+  src: url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.eot?') format('eot'),
+  url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.otf')  format('opentype'),
+  url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.woff') format('woff'),
+  url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.ttf')  format('truetype'),
+  url('/files/fonts/RotisSansSerifStd-Light/RotisSansSerifStd-Light.svg#RotisSansSerifStd') format('svg');
+  font-weight: lighter;
+  font-style: lighter;
+}
+html{
+  -webkit-font-smoothing: antialiased;
+
+  font-family: 'RotisSansSerifStd-Light' !important;
+  margin:0px;
+  padding:0px;
+  height:100%;
+  color: #808080;
+  text-rendering: optimizeLegibility;
+  h1{
+    font-size:29px;
+  }
+  a,a:active,a:visited {
+    color: #0064AE;
+    text-decoration: none;
+  }
+
+  .tborder{
+    border-top: 1px solid #D4D4D4;
+  }
+}
+/* maybe split of multi query & fixes*/
+video{height:100%;width: 100%}
+.mejs-overlay, .mejs-layer, .mejs-overlay-play {width:100% !important;height: 100% !important;}
+element.style{width:100% !important;height: 100% !important;}
+/* ce_headline ONLY TOPIC*/
+
+
+
+.mod_article h1.ce_headline{
+  margin: 0 auto !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+//CONTENT SLIDER START
+div.cslide_elem .threeRow {
+  float: left;
+}
+.csWrapper{
+  width: 100%;
+}
+.csImageholder img{
+  width: 33.33%;
+  display:block;
+
+  float:left;
+}
+.gsWrapper{
+  width:33.33%;
+  img{width:100%;}
+}
+.gsCanvas{width:100%;}
+.csImageholder canvas{
+
+  display:block;
+
+  float:left;
+}
+.csImageholder a img.zwei{
+  display:block;
+
+}
+
+//CONTENT SLIDER END
+
+/* ce_headline */
+/* ALLGEMEINER MARGIN TOP FIX*/
+#diagnostik,#id-3d-computerplanung,
+div#leistungsspektrum.mod_article div.ce_text,
+#philo,#datenschutz,#sitemap,#impressum,
+div#praxis.mod_article div#praxis.ce_text{
+  margin-top:60px !important;
+}
+#diagnostik{
+  margin-top:70px !important;
+}
+/* ALLGEMEINER MARGIN TOP FIX   ende*/
+/* BOTTOMNAVI*/
+#bottomnavi{
+  padding-top:4px;
+  margin:0 auto;
+  width:300px;
+  a{clear:both;}
+  font-size:17px;
+}
+
+
+/* BOTTOMNAVI*/
+/* Facebook bottom img */
+.fb{
+  img{
+    position: relative;
+
+  }
+}
+/* Facebook bottom img */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.mm-list{
+  font-size: 20px;
+}
+#loginBox {
+color:white;
+  display:none;
+}
+
+/* MEDIA QUERY INCLUDES */
+@import '320';
+@import '600';
+@import '720';
+@import '1024';
+@import '1280';
+@import '1920';
+
+
